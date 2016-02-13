@@ -1,0 +1,77 @@
+#!/bin/sh
+ 
+## CONFIGURATION
+ 
+# Color 1
+C0="#f5f5f5"
+# color iconos y escritorio actual
+C1="#707070"
+# color 2
+C2="#e9e9e9"
+# color texto y escritorios inactivos
+CF="#000000"
+# fondo barra
+CB="#ffffff"
+ 
+FICO="Siji:pixelsize=9"
+FNOR="erusfont:pixelsize=9"
+ 
+GEO="1360x20+0+0"
+GEOBORDER="1360x20+0+0"
+ 
+## FUNCTIONS
+ 
+sound() {
+  SOUND=$(amixer get Master | grep 'Front Left: Playback' | grep -o '...%' | sed 's/\[//' | sed 's/%//' | sed 's/ //')
+
+  echo "%{B-}%{F$C1}\uE05D%{F-} ${SOUND}%"
+}
+ 
+dektop() {
+  CURDESK=$(xprop -root _NET_CURRENT_DESKTOP | cut -d ' ' -f 3)
+  if [ ${CURDESK} = 0 ]; then
+    DESKTOP="%{F-}%{F$C1}\uE190%{F-} \uE190 \uE190 \uE190 \uE190%{F-}"
+  elif [ ${CURDESK} = 1 ]; then
+    DESKTOP="%{F-}\uE190 %{F$C1}\uE190%{F-} \uE190 \uE190 \uE190%{F-}"
+  elif [ ${CURDESK} = 2 ]; then
+    DESKTOP="%{F-}\uE190 \uE190 %{F$C1}\uE190%{F-} \uE190 \uE190%{F-}"
+  elif [ ${CURDESK} = 3 ]; then
+    DESKTOP="%{F-}\uE190 \uE190 \uE190 %{F$C1}\uE190%{F-} \uE190%{F-}"
+  elif [ ${CURDESK} = 4 ]; then
+    DESKTOP="%{F-}\uE190 \uE190 \uE190 \uE190 %{F$C1}\uE190%{F-}"
+  else
+    DESKTOP="%{F-}\uE190 \uE190 \uE190 \uE190 \uE190%{F-}"
+  fi
+  echo "${DESKTOP}"
+}
+ 
+clock() {
+  TIME="$(date '+%H:%M')"
+  echo "%{B-}%{F-}%{F$C1}\uE015%{F-} ${TIME}"
+}
+ 
+music() {
+  artist="$(mpc current -f "%artist%" | head -n 1)"
+  title="$(mpc current -f "%title%" | head -n 1)"
+ 
+  if [ -z $artist ]; then
+    echo ""
+  else
+    echo "%{F$C1}\uE05c%{F-} $title %{F$C1}\uE075%{F-} $artist"
+  fi
+}
+ 
+ 
+## OUTPUT
+#echo '' | lemonbar -d -g $GEOBORDER -B $CF -p &
+while :; do
+  BUF=''
+  BUF="${BUF}%{l}   $(music)"
+  BUF="${BUF}%{c}"
+  BUF="${BUF}$(dektop) "
+  BUF="${BUF}%{r}"
+  BUF="${BUF}$(sound) "
+  BUF="${BUF}$(clock)   "
+  echo -e "${BUF}"
+  sleep 0.1s
+done | lemonbar -d -g $GEO -f $FICO -f $FNOR -F $CF | sh &

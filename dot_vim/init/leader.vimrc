@@ -1,5 +1,5 @@
 " Set leader to space
-let g:mapleader = "\<Space>"
+let mapleader = " "
 
 " Set local leader to comma
-let g:maplocalleader = ','
+let maplocalleader = ','

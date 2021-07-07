@@ -14,11 +14,11 @@ let g:which_key_map =  {}
 let g:which_key_map.f = {
 	\ 'name' : '+file' ,
 	\ 's'	 : ['update'     , 'save-file']      	,
-	\ 't'	 : ['update'     , 'toggle-filetree']	,
+	\ 't'	 : ['update'     , 'toggle-filetree']	
 }
 
 " Q bindings
 let g:which_key_map.q = {
 	\ 'name' : '+quit' ,
-	\ 'Q'	 : ['q!'  	 , 'force-quit']      	,
+	\ 'Q'	 : ['q!'  	 , 'force-quit']      	
 }

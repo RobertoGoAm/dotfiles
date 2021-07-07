@@ -1,7 +1,7 @@
 " Set leader to space
-let mapleader = " "
+let mapleader=" "
 
 " Set local leader to comma
-let maplocalleader = ','
+let maplocalleader=","
 
 nmap <leader>i iHello World<esc>

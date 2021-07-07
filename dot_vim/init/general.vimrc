@@ -31,6 +31,7 @@ set shiftwidth=2
 
 " Colorscheme
 colorscheme doom-one
+set background=dark
 
 ""///// Search
 

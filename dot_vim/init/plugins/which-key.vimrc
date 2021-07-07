@@ -20,5 +20,6 @@ let g:which_key_map.f = {
 " Q bindings
 let g:which_key_map.q = {
 	\ 'name' : '+quit'	,
-	\ 'Q'	 : ['q!'  	, 'force-quit']		,
+	\ 'q'	 : ['q'  	, 'quit']			,
+	\ 'Q'	 : ['qa!'  	, 'quit-without-saving']	,
 	\}

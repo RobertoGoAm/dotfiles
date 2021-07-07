@@ -14,6 +14,9 @@ autocmd VimEnter *
 " Plugins
 call plug#begin()
 
+" Themes
+Plug 'romgrk/doom-one.vim'            " Doom Theme
+
 " UI
 Plug 'preservim/nerdtree'             " File explorer
 Plug 'Xuyuanp/nerdtree-git-plugin'    " Git integration for the file explorer
@@ -21,7 +24,8 @@ Plug 'airblade/vim-gitgutter'         " Git integration for the gutter
 Plug 'vim-airline/vim-airline'        " Status bar
 Plug 'vim-airline/vim-airline-themes' " Status bar themes
 
-" Version control
-Plug 'tpope/vim-fugitive'
+" Version Control
+Plug 'tpope/vim-fugitive'             " Git integratio
+
 
 call plug#end()

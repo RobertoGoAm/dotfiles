@@ -9,8 +9,9 @@ endif
 call plug#begin()
 
 " UI
-Plug 'preservim/nerdtree'          " File explorer
-Plug 'Xuyuanp/nerdtree-git-plugin' " Git integration for the file explorer
-Plug 'airblade/vim-gitgutter'      " Git integration for the gutter
-
+Plug 'preservim/nerdtree'             " File explorer
+Plug 'Xuyuanp/nerdtree-git-plugin'    " Git integration for the file explorer
+Plug 'airblade/vim-gitgutter'         " Git integration for the gutter
+Plug 'vim-airline/vim-airline'        " Status bar
+Plug 'vim-airline/vim-airline-themes' " Status bar themes
 call plug#end()

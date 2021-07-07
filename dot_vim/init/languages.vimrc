@@ -1,3 +1,4 @@
+source $HOME/.vim/init/languaget/dotfiles.vimrc
 source $HOME/.vim/init/languages/go.vimrc
 source $HOME/.vim/init/languages/js.vimrc
 source $HOME/.vim/init/languages/ts.vimrc

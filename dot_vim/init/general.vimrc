@@ -54,7 +54,7 @@ set shiftwidth=2
 
 "///// Term
 set termwinsize=10x0
-set ttimeoutlen=50
+set ttimeoutlen=25
 
 
 "///// Theme

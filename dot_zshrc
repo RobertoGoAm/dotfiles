@@ -135,7 +135,7 @@ SPACESHIP_VENV_SYMBOL=" "
 export NODE_OPTIONS="--max-old-space-size=4096"
 export XDEBUG_CONFIG="idekey=VSCODE"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-16.jdk/Contents/home/jre
-export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin
 fpath=($fpath "/Users/roberto/.zfunctions")
 
   # Set Spaceship ZSH as a prompt

@@ -46,6 +46,9 @@ endif
 set background=dark
 colorscheme palenight
 
+" Italics
+let g:palenight_terminal_italics=1
+
 
 ""///// Search
 

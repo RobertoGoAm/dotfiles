@@ -1,2 +1,2 @@
 " Airline theme
-let g:airline_theme='doom-one'
+let g:airline_theme='one'

@@ -1,2 +1,2 @@
 # dotfiles
-Run `chezmoi init --apply robertogoam`
+Run `sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply robertogoam`

@@ -17,6 +17,22 @@ set hidden
 autocmd BufWritePre * %s/\s\+$//e
 
 
+"///// Search
+
+" Search as characters are entered
+set incsearch
+
+" Highlight search matches
+set hlsearch
+
+" Autocomplete for command menu
+set wildmenu
+
+
+"///// Splits
+set splitbelow
+
+
 "///// Tabs and spacing
 
 " Typical backspace behavior
@@ -32,8 +48,11 @@ set softtabstop=2
 " Automatic indent to 2 spaces
 set shiftwidth=2
 
+" Term
+set termsize=10x0
 
-""///// Theme
+
+"///// Theme
 
 " True colors
 if (has("nvim"))
@@ -56,13 +75,3 @@ colorscheme palenight
 let g:palenight_terminal_italics=1
 
 
-""///// Search
-
-" Search as characters are entered
-set incsearch
-
-" Highlight search matches
-set hlsearch
-
-" Autocomplete for command menu
-set wildmenu 

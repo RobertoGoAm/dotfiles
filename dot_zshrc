@@ -145,5 +145,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="/opt/homebrew/opt/node@12/bin:$PATH"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 export PATH="/Users/robert/.emacs.d/bin:$PATH"
+export GOPATH="$HOME/Dev/Go"
+export PATH="$PATH:$GOPATH/bin"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh

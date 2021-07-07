@@ -14,6 +14,9 @@ autocmd VimEnter *
 " Plugins
 call plug#begin()
 
+" Keybindings
+Plug 'liuchengxu/vim-which-key'
+
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'  " Palenight theme
 
@@ -26,6 +29,5 @@ Plug 'vim-airline/vim-airline-themes' " Status bar themes
 
 " Version Control
 Plug 'tpope/vim-fugitive'             " Git integration
-
 
 call plug#end()

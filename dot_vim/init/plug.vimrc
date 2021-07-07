@@ -1,3 +1,5 @@
+"/////// Auto stuff
+
 " Auto install the plugin manager if not present
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -11,7 +13,7 @@ autocmd VimEnter *
   \|   PlugInstall --sync | q
   \| endif
 
-" Plugins
+"////// Plugins
 call plug#begin()
 
 " Keybindings

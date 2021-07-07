@@ -1,6 +1,9 @@
 "///// General
 set nocompatible
 
+" Set encoding to UTF-8
+set encoding=UTF-8
+
 " Enable filetype plugins
 filetype plugin on
 

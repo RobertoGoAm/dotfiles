@@ -119,7 +119,7 @@ alias gpgr="git pull origin develop && git rebase develop"
 
 alias focus="focus.sh"
 
-alias dfug="gitupdate .local/share/chezmoi"
+alias dfug="(cd ~ && gitupdate .local/share/chezmoi)"
 alias dfup="chezmoi update"
 
 SPACESHIP_TIME_SHOW=true

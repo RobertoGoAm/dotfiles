@@ -10,6 +10,15 @@ syntax enable
 " Undo persists on even on switching buffers
 set hidden
 
+" Relative and absolute linenumbers based on mode
+:set number relativenumber
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+
 
 "///// Tabs and spacing
 

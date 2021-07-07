@@ -13,7 +13,7 @@ let g:which_key_map =  {}
 " F bindings
 let g:which_key_map.f = {
 	\ 'name' : '+file' 	,
-	\ 's'	 : ['update'    , 'save-file']      	,
+      	\ 's' : 'save-file'                       ,
 	\ 't'	 : ['update'    , 'toggle-filetree']	,
 	\}
 

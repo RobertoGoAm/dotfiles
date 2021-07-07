@@ -16,6 +16,9 @@ autocmd VimEnter *
 "////// Plugins
 call plug#begin()
 
+" File management
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+
 " Keybindings
 Plug 'liuchengxu/vim-which-key'
 

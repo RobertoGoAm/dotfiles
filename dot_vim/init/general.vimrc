@@ -28,8 +28,9 @@ set shiftwidth=2
 
 
 ""///// Theme
-colorscheme doom-one
 
+" Colorscheme
+colorscheme doom-one
 
 ""///// Search
 

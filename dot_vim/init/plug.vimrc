@@ -15,7 +15,7 @@ autocmd VimEnter *
 call plug#begin()
 
 " Themes
-Plug 'romgrk/doom-one.vim'            " Doom Theme
+Plug 'drewtempelmeyer/palenight.vim'  " Palenight theme
 
 " UI
 Plug 'preservim/nerdtree'             " File explorer
@@ -25,7 +25,7 @@ Plug 'vim-airline/vim-airline'        " Status bar
 Plug 'vim-airline/vim-airline-themes' " Status bar themes
 
 " Version Control
-Plug 'tpope/vim-fugitive'             " Git integratio
+Plug 'tpope/vim-fugitive'             " Git integration
 
 
 call plug#end()

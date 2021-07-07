@@ -14,7 +14,7 @@ let g:which_key_map =  {}
 let g:which_key_map.f = {
 	\ 'name' : '+file' 	,
       	\ 's' : 'save-file'                       ,
-	\ 't'	 : ['update'    , 'toggle-filetree']	,
+	\ 't'	 : [':NERDTreeToggle'    , 'toggle-filetree']	,
 	\}
 
 " Q bindings

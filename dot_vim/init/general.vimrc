@@ -10,14 +10,8 @@ syntax enable
 " Undo persists on even on switching buffers
 set hidden
 
-" Relative and absolute linenumbers based on mode
+" Enable relative line numbers
 :set number relativenumber
-
-augroup numbertoggle
-  au!
-  au BufEnter,FocusGained,InsertLeave * set relativenumber
-  au BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
 
 
 "///// Tabs and spacing
@@ -57,13 +51,6 @@ colorscheme palenight
 
 " Italics
 let g:palenight_terminal_italics=1
-
-" Highlight current line
-augroup CursorLine
-  au!
-  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  au WinLeave * setlocal nocursorline
-augroup END
 
 
 ""///// Search

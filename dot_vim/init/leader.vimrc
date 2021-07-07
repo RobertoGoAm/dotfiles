@@ -4,4 +4,5 @@ let g:mapleader = "\<Space>"
 " Set local leader to comma
 let g:maplocalleader = ","
 
-nmap <leader>i iHello World<esc>
+" Set leader timeout to 500ms
+set timeoutlen=500

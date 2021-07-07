@@ -12,9 +12,10 @@ let g:which_key_map =  {}
 
 " F bindings
 let g:which_key_map.f = {
-	\ 'name' : '+file' 	,
-      	\ 's'    : [':w'                 , 'file-save']		,
-	\ 't'	 : [':NERDTreeToggle'    , 'toggle-filetree']	,
+	\ 'name' : '+file' 	          ,
+	\ 's'    : [':w'              , 'file-save']		      ,
+	\ 't'	   : [':NERDTreeToggle' , 'toggle-filetree']    ,
+  \ 'v'    : [':NERDTreeFind'   , 'reveal-in-filetree'] ,
 	\}
 
 " Q bindings

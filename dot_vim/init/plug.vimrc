@@ -19,6 +19,9 @@ call plug#begin()
 " Keybindings
 Plug 'liuchengxu/vim-which-key'
 
+" Project management
+Plug 'airblade/vim-rooter'
+
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'  " Palenight theme
 

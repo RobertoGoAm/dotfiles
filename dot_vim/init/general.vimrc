@@ -51,8 +51,10 @@ set softtabstop=2
 " Automatic indent to 2 spaces
 set shiftwidth=2
 
-" Term
+
+"///// Term
 set termwinsize=10x0
+set ttimeoutlen=50
 
 
 "///// Theme

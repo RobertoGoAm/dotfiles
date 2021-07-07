@@ -6,3 +6,4 @@ let g:maplocalleader = ","
 
 " Set leader timeout to 500ms
 set timeoutlen=500
+

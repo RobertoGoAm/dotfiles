@@ -119,8 +119,8 @@ alias gpgr="git pull origin develop && git rebase develop"
 
 alias focus="focus.sh"
 
-alias dfug="(cd ~ && gitupdate .local/share/chezmoi)"
-alias dfup="chezmoi update"
+alias dfup="(cd ~ && gitupdate .local/share/chezmoi)"
+alias dfdown="chezmoi update"
 
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_RUBY_SYMBOL=" "

@@ -49,7 +49,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " Term
-set termsize=10x0
+set termwinsize=10x0
 
 
 "///// Theme

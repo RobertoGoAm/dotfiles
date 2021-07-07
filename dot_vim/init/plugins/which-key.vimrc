@@ -12,13 +12,13 @@ let g:which_key_map =  {}
 
 " F bindings
 let g:which_key_map.f = {
-	\ 'name' : '+file' ,
-	\ 's'	 : ['update'     , 'save-file']      	,
-	\ 't'	 : ['update'     , 'toggle-filetree']	
-}
+	\ 'name' : '+file' 	,
+	\ 's'	 : ['update'    , 'save-file']      	,
+	\ 't'	 : ['update'    , 'toggle-filetree']	,
+	\}
 
 " Q bindings
 let g:which_key_map.q = {
-	\ 'name' : '+quit' ,
-	\ 'Q'	 : ['q!'  	 , 'force-quit']      	
-}
+	\ 'name' : '+quit'	,
+	\ 'Q'	 : ['q!'  	, 'force-quit']		,
+	\}

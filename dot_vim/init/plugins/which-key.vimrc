@@ -7,5 +7,5 @@ nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 " F bindings
 let g:which_key_map['f'] = {
 	\ 'name' : '+file' ,
-	\ 's'	 : [''     , 'save-file']      ,
+	\ 's'	 : ['update'     , 'save-file']      ,
 }

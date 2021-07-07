@@ -17,28 +17,28 @@ autocmd VimEnter *
 call plug#begin()
 
 " File management
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }  " Fuzzy finder
 
 " Keybindings
-Plug 'liuchengxu/vim-which-key'
+Plug 'liuchengxu/vim-which-key'                                 " Keybind reference
 
 " Project management
-Plug 'airblade/vim-rooter'
+Plug 'airblade/vim-rooter'                                      " Project detection
 
 " Themes
-Plug 'drewtempelmeyer/palenight.vim'            " Palenight theme
+Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme
 
 " UI
-Plug 'preservim/nerdtree'                       " File explorer
-Plug 'Xuyuanp/nerdtree-git-plugin'              " Git integration for the file explorer
-Plug 'vim-airline/vim-airline'                  " Status bar
-Plug 'vim-airline/vim-airline-themes'           " Status bar themes
-Plug 'ryanoasis/vim-devicons'                   " Icons for the file explorer
-Plug 'airblade/vim-gitgutter'                   " Git integration for the gutter
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'  " Colors for the file explorer
+Plug 'preservim/nerdtree'                                       " File explorer
+Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integration for the file explorer
+Plug 'vim-airline/vim-airline'                                  " Status bar
+Plug 'vim-airline/vim-airline-themes'                           " Status bar themes
+Plug 'ryanoasis/vim-devicons'                                   " Icons for the file explorer
+Plug 'airblade/vim-gitgutter'                                   " Git integration for the gutter
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Colors for the file explorer
 
 
 " Version Control
-Plug 'tpope/vim-fugitive'                       " Git integration
+Plug 'tpope/vim-fugitive'                                       " Git integration
 
 call plug#end()

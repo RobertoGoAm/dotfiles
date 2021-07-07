@@ -13,6 +13,9 @@ set hidden
 " Enable relative line numbers
 :set number relativenumber
 
+" Trim trailing whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
+
 
 "///// Tabs and spacing
 

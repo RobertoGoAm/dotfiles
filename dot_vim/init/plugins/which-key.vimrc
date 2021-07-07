@@ -15,3 +15,5 @@ let g:which_key_map.q = {
 	\ 'name' : '+quit' ,
 	\ 'Q'	 : ['q!'  	 , 'force-quit']      ,
 }
+
+call which_key#register('<Space>', "g:which_key_map")

@@ -5,7 +5,13 @@ nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
 " F bindings
-let g:which_key_map['f'] = {
+let g:which_key_map.f = {
 	\ 'name' : '+file' ,
 	\ 's'	 : ['update'     , 'save-file']      ,
+}
+
+" Q bindings
+let g:which_key_map.q = {
+	\ 'name' : '+quit' ,
+	\ 'Q'	 : ['q!'  	 , 'force-quit']      ,
 }

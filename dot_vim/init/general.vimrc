@@ -19,6 +19,9 @@ set hidden
 " Trim trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
 
+" Set ruler
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 "///// Search
 

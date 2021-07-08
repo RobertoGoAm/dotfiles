@@ -20,7 +20,7 @@ set hidden
 autocmd BufWritePre * %s/\s\+$//e
 
 " Set ruler
-set colorcolumn=80
+set colorcolumn=140
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 "///// Search

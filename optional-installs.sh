@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # Add chezmoi to PATH
 typeset -U path
 path+=$HOME/bin
@@ -6,4 +8,4 @@ path+=$HOME/bin
 go get -u github.com/nikitavoloboev/gitupdate
 
 # Reload .zshrc
-#exec ~/.zshrc
+exec ~/.zshrc

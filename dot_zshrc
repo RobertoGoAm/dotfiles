@@ -122,7 +122,7 @@ alias focus="focus.sh"
 alias dfup="(cd ~ && gitupdate .local/share/chezmoi)"
 alias dfdown="chezmoi update"
 
-pathadd () {
+function pathadd () {
     if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
         PATH="${PATH:+"$PATH:"}$1"
     fi

@@ -141,6 +141,7 @@ SPACESHIP_VENV_SYMBOL=" "
 export NODE_OPTIONS="--max-old-space-size=4096"
 export XDEBUG_CONFIG="idekey=VSCODE"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-16.jdk/Contents/home/jre
+fpath=($fpath "/Users/roberto/.zfunctions")
 
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
@@ -148,7 +149,6 @@ prompt spaceship
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-fpath=($fpath "/Users/roberto/.zfunctions")
 export GOPATH="$HOME/Dev/Go"
 export PATH="/usr/local/opt/node@12/bin:/usr/local/opt/node@12/bin:/opt/homebrew/opt/node@12/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$GOPATH/bin"
 

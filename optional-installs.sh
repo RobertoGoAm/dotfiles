@@ -7,5 +7,3 @@ path+=$HOME/bin
 # Install gitupdate
 go get -u github.com/nikitavoloboev/gitupdate
 
-# Reload .zshrc
-exec ~/.zshrc

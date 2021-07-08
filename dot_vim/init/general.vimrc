@@ -23,6 +23,11 @@ autocmd BufWritePre * %s/\s\+$//e
 set colorcolumn=140
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+" Change cursor base on mode
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 "///// Search
 
 " Search as characters are entered

@@ -6,4 +6,4 @@ path+=$HOME/bin
 go get -u github.com/nikitavoloboev/gitupdate
 
 # Reload .zshrc
-exec ~/.zshrc
+#exec ~/.zshrc

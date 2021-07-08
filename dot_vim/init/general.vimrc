@@ -7,9 +7,6 @@ set encoding=UTF-8
 " Enable filetype plugins
 filetype plugin on
 
-" Enable syntax highlighting
-syntax enable
-
 " Undo persists on even on switching buffers
 set hidden
 
@@ -78,10 +75,12 @@ endif
 " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
 if (has("termguicolors"))
   set termguicolors
+  set t_Co=256
 endif
 
 " Colorscheme
 set background=dark
+syntax enable
 colorscheme palenight
 
 " Italics

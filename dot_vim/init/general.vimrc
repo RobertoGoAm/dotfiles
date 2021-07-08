@@ -75,13 +75,13 @@ endif
 " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
 if (has("termguicolors"))
   set termguicolors
-  set t_Co=256
 endif
 
 " Colorscheme
 set background=dark
 syntax enable
 colorscheme palenight
+set t_Co=256
 
 " Italics
 let g:palenight_terminal_italics=1

@@ -82,8 +82,8 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#if [[ -n $SSH_CONNECTION ]]; then
+export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -100,25 +100,15 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gs="git status"
-
 alias gl="git log"
-
 alias gcom="git checkout master"
-
 alias gaa="git add ."
-
 alias gc="git commit -m "
-
 alias gp="git push"
-
 alias nah="git reset --hard && git clean -df"
-
 alias dev="cd ~/Dev"
-
 alias gpgr="git pull origin develop && git rebase develop"
-
 alias focus="focus.sh"
-
 alias dfup="(cd ~ && gitupdate .local/share/chezmoi)"
 alias dfdown="chezmoi update"
 
@@ -130,7 +120,6 @@ function pathadd () {
 
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_RUBY_SYMBOL=" "
-
 SPACESHIP_NODE_SYMBOL=" "
 SPACESHIP_CHAR_SYMBOL=" "
 SPACESHIP_GIT_SYMBOL=" "

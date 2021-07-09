@@ -5,7 +5,7 @@ set nocompatible
 set clipboard+=unnamedplus
 
 " Set encoding to UTF-8
-"set encoding=UTF-8
+set encoding=UTF-8
 
 " Enable filetype plugins
 filetype plugin indent on

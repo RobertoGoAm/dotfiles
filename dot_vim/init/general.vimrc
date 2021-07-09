@@ -80,6 +80,8 @@ set ttimeoutlen=25
 " Colorscheme
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
+set t_8f=^[[38;2;%lu;%lu;%lum  " Needed in tmux
+set t_8b=^[[48;2;%lu;%lu;%lum  " Ditto
 set t_Co=256
 set background=dark
 syntax enable

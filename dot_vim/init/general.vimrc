@@ -84,7 +84,6 @@ set ttimeoutlen=25
 
 " Colorscheme
 set termguicolors
-highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 if !has('gui_running')
   set t_Co=256

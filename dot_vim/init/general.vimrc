@@ -25,6 +25,8 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 "let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
+set showcmd
+
 "///// Search
 
 " Search as characters are entered

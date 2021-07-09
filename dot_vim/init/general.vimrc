@@ -80,6 +80,7 @@ set ttimeoutlen=25
 "endif
 
 " Colorscheme
+set termguicolors
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 if !has('gui_running')
@@ -92,7 +93,6 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set background=dark
 colorscheme palenight
-"set termguicolors
 syntax on
 
 " Italics

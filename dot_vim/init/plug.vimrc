@@ -26,6 +26,7 @@ Plug 'liuchengxu/vim-which-key'                                 " Keybind refere
 Plug 'airblade/vim-rooter'                                      " Project detection
 
 " Themes
+Plug 'drzel/vim-pedant'                                         " Sync iterm2 bg to the colorscheme
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme
 
 " UI

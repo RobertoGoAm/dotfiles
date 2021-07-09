@@ -2,13 +2,24 @@
 call which_key#register('<Space>', "g:which_key_map")
 
 " Bind space to which-key
-nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+" Map leader to which_key
+nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
+vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 
 " Bind comma to which-key
 nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
 " Prefix dictionary
 let g:which_key_map =  {}
+
+" Define a separator
+let g:which_key_sep = '→'
+
+" Change the colors if you want
+highlight default link WhichKey          Operator
+highlight default link WhichKeySeperator DiffAdded
+highlight default link WhichKeyGroup     Identifier
+highlight default link WhichKeyDesc      Function
 
 " F bindings
 let g:which_key_map.f = {

@@ -80,13 +80,17 @@ set ttimeoutlen=25
 "endif
 
 " Colorscheme
+if !has('gui_running')
+  set t_Co=256
+endif
+
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set background=dark
 colorscheme palenight
-set termguicolors
+"set termguicolors
 syntax on
 
 " Italics

@@ -5,7 +5,7 @@ set nocompatible
 set encoding=UTF-8
 
 " Enable filetype plugins
-filetype plugin on
+filetype plugin indent on
 
 " Undo persists on even on switching buffers
 set hidden

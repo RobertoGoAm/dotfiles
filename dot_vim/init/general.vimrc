@@ -84,6 +84,6 @@ colorscheme palenight
 set t_Co=256
 
 " Italics
-let g:palenight_terminal_italics=1
+"let g:palenight_terminal_italics=1
 
 

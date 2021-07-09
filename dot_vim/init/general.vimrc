@@ -1,6 +1,9 @@
 "///// General
 set nocompatible
 
+" Use system clipboard
+set clipboard+=unnamedplus
+
 " Set encoding to UTF-8
 set encoding=UTF-8
 

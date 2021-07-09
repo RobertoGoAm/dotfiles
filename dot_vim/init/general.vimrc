@@ -80,10 +80,10 @@ set ttimeoutlen=25
 " Colorscheme
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
+set t_Co=256
 set background=dark
 syntax enable
 colorscheme palenight
-set t_Co=256
 
 " Italics
 let g:palenight_terminal_italics=1

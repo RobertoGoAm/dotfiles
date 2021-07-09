@@ -34,6 +34,7 @@ set showcmd
 " Always show sign column
 set signcolumn=yes
 
+
 "///// Search
 
 " Search as characters are entered

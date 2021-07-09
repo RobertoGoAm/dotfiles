@@ -11,3 +11,9 @@ augroup END
 "  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
 "  au WinLeave * setlocal nocursorline
 "augroup END
+
+" Persist cursor
+autocmd BufReadPost *
+  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+  \ |   exe "normal! g`\""
+  \ | endif

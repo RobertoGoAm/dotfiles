@@ -1,8 +1,4 @@
-" Register which-key
-call which_key#register('<Space>', "g:which_key_map")
-
 " Bind space to which-key
-" Map leader to which_key
 nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 
@@ -35,3 +31,7 @@ let g:which_key_map.q = {
 	\ 'q'	 : [':qa'  	, 'quit']			,
 	\ 'Q'	 : [':qa!'  	, 'quit-without-saving']	,
 	\}
+
+" Register which-key
+call which_key#register('<Space>', "g:which_key_map")
+

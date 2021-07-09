@@ -37,6 +37,8 @@ set signcolumn=yes
 " Highlight cursor line
 set cursorline
 
+" Taller command section
+set cmdheight=2
 
 "///// Search
 

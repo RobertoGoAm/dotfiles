@@ -5,13 +5,6 @@ augroup numbertoggle
   au BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-" Highlight current line
-"augroup CursorLine
-"  au!
-"  au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-"  au WinLeave * setlocal nocursorline
-"augroup END
-
 " Persist cursor
 autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'

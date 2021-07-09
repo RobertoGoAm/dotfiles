@@ -86,6 +86,7 @@ set background=dark
 colorscheme palenight
 set termguicolors
 syntax enable
+syntax on
 
 " Italics
 let g:palenight_terminal_italics=1

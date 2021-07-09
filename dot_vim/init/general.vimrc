@@ -80,6 +80,8 @@ set ttimeoutlen=25
 "endif
 
 " Colorscheme
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 if !has('gui_running')
   set t_Co=256
 endif

@@ -41,7 +41,7 @@ Plug 'junegunn/fzf.vim',                                        " Fuzzy finder
 Plug 'pbogut/fzf-mru.vim'                                       " Plugin for fzf to search recent files
 
 " Keybindings
-" Plug 'liuchengxu/vim-which-key'                                 " Keybind reference
+Plug 'liuchengxu/vim-which-key'                                 " Keybind reference
 
 " Navigation
 Plug 't9md/vim-choosewin'                                       " Switch to specific windows
@@ -78,5 +78,4 @@ Plug 'ruanyl/vim-gh-line'                                       " Repository nav
 Plug 'airblade/vim-gitgutter'                                   " Git integration for the gutter
 Plug 'idanarye/vim-merginal'                                    " Easier Git branch management
 
-Plug 'liuchengxu/vim-which-key'                                 " Keybind reference
 call plug#end()

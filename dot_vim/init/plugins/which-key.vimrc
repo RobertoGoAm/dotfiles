@@ -24,7 +24,7 @@ let g:which_key_use_floating_win = 0
 " Ignore bindings
 let g:which_key_map.a = 'which_key_ignore'
 let g:which_key_map.s = 'which_key_ignore'
-" let g:which_key_map.r = 'which_key_ignore'
+let g:which_key_map.r = 'which_key_ignore'
 let g:which_key_map.rr = 'which_key_ignore'
 let g:which_key_map.l = 'which_key_ignore'
 let g:which_key_map['h'] = { 'name': 'which_key_ignore' }

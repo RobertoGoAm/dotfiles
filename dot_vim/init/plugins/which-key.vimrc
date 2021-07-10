@@ -47,10 +47,18 @@ let g:which_key_map.f = {
 let g:which_key_map.g = {
   \ 'name' :  '+git'                            ,
   \ 'd'    : [':Git diff'                       , 'git diff'              ],
+  \ 'e'    : ['<Plug>(GitGutterPrevHunk)'       , 'prev hunk'             ],
   \ 'g'    : [':Git'                            , 'git status'            ],
+  \ 'h'    : [':GitGutterLineHighlightsToggle'  , 'highlight hunks'       ],
+  \ 'H'    : ['<Plug>(GitGutterPreviewHunk)'    , 'preview hunk'          ],
+  \ 'n'    : ['<Plug>(GitGutterNextHunk)'       , 'next hunk'             ],
   \ 'p'    : [':Git push'                       , 'git push'              ],
   \ 'P'    : [':Git pull'                       , 'git pull'              ],
   \ 's'    : ['<Plug>(GitGutterStageHunk)'      , 'git stage hunk'        ],
+  \ 't'    : [':GitGutterSignsToggle'           , 'toggle gutter signs'   ],
+  \ 'u'    : ['<Plug>(GitGutterUndoHunk)'       , 'undo hunk'             ],
+  \ 'v'    : [':GV'                             , 'view commits'          ],
+  \ 'V'    : [':GV!'                            , 'view buffer commits'   ],
   \}
 
 " P bindings

@@ -1,6 +1,7 @@
 " Colemak bindings
-let NERDTreeMapOpenExpl="k" " free up the 'e' key to be used for something else
+let NERDTreeMapOpenExpl="i" " Navigate to the node
 let NERDTreeMenuUp="e"
+let NERDTreeMapOpenSplit="<C-v>"
 
 " Automatically close NERDTree on opening a file
 let NERDTreeQuitOnOpen = 1

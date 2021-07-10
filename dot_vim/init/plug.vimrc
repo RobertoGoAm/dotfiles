@@ -18,6 +18,7 @@ call plug#begin()
 
 " Code
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
+Plug 'tpope/vim-commentary'                                     " Comments for your code
 
 " File management
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }  " Fuzzy finder

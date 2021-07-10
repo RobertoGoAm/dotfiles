@@ -89,7 +89,9 @@ let g:which_key_map.o = {
   \ 'name' :  '+open'                             ,
   \ 't' : {
     \ 'name' : '+terminal',
-    \ 'c' : [':',
+    \ 'c' : [':term ++curwin', 'open terminal in current window'],
+    \ 's' : [':', 'open terminal down'             ],
+    \ 'v' : [':', 'open terminal right'            ],
     \}
   \ 't'    : [':%s/\s\+$//e'                      , 'delete trailing whitespace'],
   \}

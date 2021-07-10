@@ -5,6 +5,10 @@ let g:Lf_UseMemoryCache = 0
 " Colemak up and down in the leaderf window
 let g:Lf_CommandMap = {'<C-K>': ['<C-e>'], '<C-J>': ['<C-n>']}
 
+" Popup mode
+let g:Lf_WindowPosition = 'popup'
+let g:Lf_PreviewInPopup = 1
+
 " Maps
 let g:Lf_ShortcutF = "<leader>ff"
 let g:Lf_ShortcutB = "<leader>bb"

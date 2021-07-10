@@ -30,6 +30,7 @@ let g:which_key_map[' '] = 'command-mode'
 let g:which_key_map.b = {
   \ 'name' : '+buffer'          ,
   \ 'b'    : 'find-buffer'      ,
+  \ 'r'    : 'recent-buffers'   ,
   \}
 
 " F bindings

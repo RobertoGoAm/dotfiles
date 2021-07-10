@@ -2,4 +2,4 @@
 autocmd FileType fzf tnoremap <buffer> <Esc> <Esc>
 
 " Disable popup
-let g:fzf_layout = { 'down': '40%' }
+let g:fzf_layout = { 'down': '60%' }

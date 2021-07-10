@@ -1,9 +1,9 @@
 " Colemak remaps
 augroup colemak_netrw
     autocmd!
-    autocmd filetype netrw call colemak_for_netrw()
+    autocmd filetype netrw call Colemak_for_netrw()
 augroup END
-function! colemak_for_netrw()
+function! Colemak_for_netrw()
   noremap <buffer> n j
   noremap <buffer> N J
   noremap <buffer> e k

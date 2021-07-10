@@ -93,7 +93,6 @@ let g:which_key_map.o = {
     \ 's' : [':', 'open terminal down'             ],
     \ 'v' : [':', 'open terminal right'            ],
     \},
-  \ 't'    : [':%s/\s\+$//e'                      , 'delete trailing whitespace'],
   \}
 
 let g:which_key_map.p = {

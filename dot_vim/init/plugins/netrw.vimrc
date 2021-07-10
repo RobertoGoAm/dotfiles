@@ -4,16 +4,16 @@ augroup colemak_netrw
     autocmd filetype netrw call Colemak_for_netrw()
 augroup END
 function! Colemak_for_netrw()
-  noremap <buffer> n j
-  noremap <buffer> N J
-  noremap <buffer> e k
-  noremap <buffer> E K
-  noremap <buffer> i l
-  noremap <buffer> I L
-  noremap <buffer> j n
-  noremap <buffer> J N
-  noremap <buffer> k e
-  noremap <buffer> K E
-  noremap <buffer> l i
-  noremap <buffer> L I
+  nmap <buffer> n j
+  nmap <buffer> N J
+  nmap <buffer> e k
+  nmap <buffer> E K
+  nmap <buffer> i l
+  nmap <buffer> I L
+  nmap <buffer> j n
+  nmap <buffer> J N
+  nmap <buffer> k e
+  nmap <buffer> K E
+  nmap <buffer> l i
+  nmap <buffer> L I
 endfunction

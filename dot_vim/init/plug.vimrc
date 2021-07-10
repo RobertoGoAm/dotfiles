@@ -30,10 +30,10 @@ Plug 'liuchengxu/vista.vim'                                     " Symbol navigat
 "
 "
 " Editing
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors
 Plug 'jiangmiao/auto-pairs'                                     " Edit delimiters in pairs
 Plug 'frazrepo/vim-rainbow'                                     " Rainbow colors for delimiters
 Plug 'tpope/vim-repeat'                                         " Repeat plugin commands with .
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors
 
 " File management
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder
@@ -61,10 +61,11 @@ Plug 'vim-airline/vim-airline-themes'                           " Status bar the
 
 " UI
 Plug 'preservim/nerdtree'                                       " File explorer
+Plug 'markonm/traces.vim'                                       " Preview regex replace with highlight
 Plug 'vim-airline/vim-airline'                                  " Status bar
 Plug 'ryanoasis/vim-devicons'                                   " Icons for the file explorer
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Colors for the file explorer
-Plug 'markonm/traces.vim'                                       " Preview regex replace with highlight
+Plug 'psliwka/vim-smoothie'                                     " Smoother scrolling
 
 " Version Control
 Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integration for the file explorer

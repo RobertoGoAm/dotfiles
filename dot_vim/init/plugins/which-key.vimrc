@@ -31,6 +31,7 @@ let g:which_key_map.b = {
   \ 'name' : '+buffer'                          ,
   \ 'b'    : [':Buffers'                        , 'find-buffer'           ],
   \ 'd'    : [':bd'                             , 'destroy-buffer'        ],
+  \ 'h'    : [':startify'                       , 'home-buffer'           ],
   \}
 
 " F bindings
@@ -73,9 +74,13 @@ let g:which_key_map.w = {
   \ 'name' :  '+window'                         ,
   \ 'd'    : ['<C-W>c'                          , 'close-window'          ],
   \ 'e'    : ['<C-W>k'                          , 'window-up'             ],
+  \ 'E'    : [':resize -5'                      , 'expand-window-up'      ],
   \ 'h'    : ['<C-W>h'                          , 'window-left'           ],
+  \ 'H'    : ['<C-W>5<'                         , 'expand-window-left'    ],
   \ 'i'    : ['<C-W>l'                          , 'window-right'          ],
+  \ 'I'    : ['<C-W>5>'                         , 'expand-window-right'   ],
   \ 'n'    : ['<C-W>j'                          , 'window-down'           ],
+  \ 'N'    : [':resize +5'                      , 'expand-window-below'   ],
   \ 'r'    : ['<C-W>r'                          , 'rotate-window'         ],
   \ 's'    : ['<C-W>s<C-W>j'                    , 'split-window-down'     ],
   \ 'v'    : ['<C-W>v<C-W>l'                    , 'split-window-right'    ],

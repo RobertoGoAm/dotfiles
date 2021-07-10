@@ -68,7 +68,12 @@ set wildmenu
 
 
 "///// Splits
+
+" New splits should appear down in the vertical axis
 set splitbelow
+
+" New splits should appear right in the horizontal axis
+set splitright
 
 
 "///// Tabs and spacing

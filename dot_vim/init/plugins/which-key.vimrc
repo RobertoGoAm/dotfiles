@@ -28,9 +28,17 @@ let g:which_key_map[' '] = 'command-mode'
 
 " B bindings
 let g:which_key_map.b = {
-  \ 'name' : '+buffer'                            ,
+  \ 'name' :  '+buffer'                            ,
   \ 'b'    : [':Buffers'                          , 'find buffer'            ],
   \ 'd'    : [':bd'                               , 'destroy buffer'         ],
+  \ 'k'    : [':q!'                               , 'kill buffer'            ],
+  \}
+
+" E bindings
+let g:which_key_map.e = {
+  \ 'name' :  '+error'                            ,
+  \ 'e'    : ['<Plug>(coc-diagnostic-prev)'       , 'next error'             ],
+  \ 'n'    : ['<Plug>(coc-diagnostic-next)'       , 'next error'             ],
   \}
 
 " F bindings

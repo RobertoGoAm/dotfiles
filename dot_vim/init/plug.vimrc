@@ -21,7 +21,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming la
 Plug 'tpope/vim-commentary'                                     " Comments for your code
 
 " File management
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }  " Fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder
 Plug 'tpope/vim-vinegar'                                        " Quickly open netrw in the current dir
 
 " Keybindings

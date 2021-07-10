@@ -4,5 +4,6 @@ source $HOME/.vim/init/plugins/leaderf.vimrc
 source $HOME/.vim/init/plugins/nerdtree.vimrc
 source $HOME/.vim/init/plugins/netrw.vimrc
 source $HOME/.vim/init/plugins/vim-devicons.vimrc
+source $HOME/.vim/init/plugins/vim-rooter.vimrc
 source $HOME/.vim/init/plugins/which-key.vimrc
 

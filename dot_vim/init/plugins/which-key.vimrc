@@ -133,7 +133,7 @@ let g:which_key_map.w = {
 
 " X bindings
 let g:which_key_map.x = {
-  \ 'name' :  'text'
+  \ 'name' :  '+text'                             ,
   \ 'd'    : [':%s/\s\+$//e'                      , 'delete trailing whitespace'],
   \}
 

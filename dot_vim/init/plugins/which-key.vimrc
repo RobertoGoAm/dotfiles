@@ -27,6 +27,7 @@ let g:which_key_map.s = 'which_key_ignore'
 let g:which_key_map.r = 'which_key_ignore'
 let g:which_key_map.rr = 'which_key_ignore'
 let g:which_key_map.l = 'which_key_ignore'
+let g:which_key_map['h'] = { 'name': 'which_key_ignore' }
 
 " Leader key map bindings
 let g:which_key_map['<Tab>'] = 'last buffer'

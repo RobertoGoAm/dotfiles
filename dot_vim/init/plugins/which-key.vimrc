@@ -25,6 +25,7 @@ let g:which_key_map['<Tab>'] = 'last-buffer'
 
 " Space bindings
 let g:which_key_map[' '] = 'command-mode'
+let g:which_key_map['r'] = ['', 'replace in buffer']
 
 " B bindings
 let g:which_key_map.b = {
@@ -82,7 +83,9 @@ let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
   \ 'f'    : [':GFiles'                           , 'find files in project'  ],
   \ 'p'    : [':FzfSwitchProject'                 , 'switch project'         ],
-  \ 'r'	   : [':so $MYVIMRC'  	                  , 'reload config'          ],
+  \ 'r'	   : [''  	                              , 'replace in project'     ],
+  \ 'R'	   : [':so $MYVIMRC'  	                  , 'reload config'          ],
+  \ 's'	   : [''  	                              , 'search in project'      ],
   \}
 
 " Q bindings

@@ -64,6 +64,7 @@ let g:which_key_map.g = {
   \ 'h'    : [':GitGutterLineHighlightsToggle'    , 'git highlight hunks'       ],
   \ 'H'    : ['<Plug>(GitGutterPreviewHunk)'      , 'git preview hunk'          ],
   \ 'l'    : [':Git log'                          , 'git log'                   ],
+  \ 'm'    : [':MerginalToggle'                   , 'toggle merginal'           ],
   \ 'n'    : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'                 ],
   \ 'o'    : [':GO'                               , 'open repo'                 ],
   \ 'p'    : [':Git push'                         , 'git push'                  ],

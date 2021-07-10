@@ -46,7 +46,7 @@ let g:which_key_map.f = {
 " G bindings
 let g:which_key_map.g = {
   \ 'name' :  '+git'                            ,
-  \ 'g'    : [':Gstatus'                        , 'git-status'            ],
+  \ 'g'    : [':Git'                        , 'git-status'            ],
   \}
 
 " P bindings

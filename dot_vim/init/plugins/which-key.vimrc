@@ -48,6 +48,7 @@ let g:which_key_map.f = {
   \ 'd'    : [':Files %:h'                        , 'find files in dir'      ],
   \ 'f'    : [':Files'                            , 'find files'             ],
   \ 'r'    : [':FZFMru'                           , 'recent files'           ],
+  \ 'R'	   : [':so $MYVIMRC'  	                  , 'reload config'          ],
   \ 's'    : [':w'                                , 'save file'              ],
   \ 't'	   : [':call NerdTreeToggleFind()'        , 'toggle filetree'        ],
   \}
@@ -84,7 +85,6 @@ let g:which_key_map.p = {
   \ 'f'    : [':GFiles'                           , 'find files in project'  ],
   \ 'p'    : [':FzfSwitchProject'                 , 'switch project'         ],
   \ 'r'	   : [''  	                              , 'replace in project'     ],
-  \ 'R'	   : [':so $MYVIMRC'  	                  , 'reload config'          ],
   \ 's'	   : [''  	                              , 'search in project'      ],
   \}
 
@@ -100,6 +100,11 @@ let g:which_key_map.s = {
   \ 'name' :  '+search'
   \}
 
+" T bindings
+let g:which_key_map.t = {
+  \ 'name' :  '+toggle'
+  \}
+
 " W bindings
 let g:which_key_map.w = {
   \ 'name' :  '+window'                           ,
@@ -112,6 +117,7 @@ let g:which_key_map.w = {
   \ 'I'    : ['<C-W>5>'                           , 'expand window right'    ],
   \ 'n'    : ['<C-W>j'                            , 'window down'            ],
   \ 'N'    : [':resize +5'                        , 'expand window below'    ],
+  \ 'o'    : [':only'                             , 'close other windows'    ],
   \ 'r'    : ['<C-W>r'                            , 'rotate window'          ],
   \ 's'    : ['<C-W>s<C-W>j'                      , 'split window down'      ],
   \ 'v'    : ['<C-W>v<C-W>l'                      , 'split window right'     ],

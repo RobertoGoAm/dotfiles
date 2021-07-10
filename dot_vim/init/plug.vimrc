@@ -57,6 +57,7 @@ Plug 'gko/vim-coloresque'                                       " Color highligh
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management
 Plug 'editorconfig/editorconfig-vim'                            " Configure vim according to project settings
+Plug 'wincent/ferret'                                           " Replace plugin
 
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme

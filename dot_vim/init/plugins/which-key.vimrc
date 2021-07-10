@@ -23,13 +23,9 @@ let g:which_key_use_floating_win = 0
 
 " Leader key map bindings
 
-" Tab bindings
 let g:which_key_map['<Tab>'] = 'last-buffer'
-
-" Space bindings
 let g:which_key_map[' '] = 'command-mode'
 
-" B bindings
 let g:which_key_map.b = {
   \ 'name' :  '+buffer'                           ,
   \ 'b'    : [':Buffers'                          , 'find buffer'               ],
@@ -37,14 +33,12 @@ let g:which_key_map.b = {
   \ 'k'    : [':q!'                               , 'kill buffer'               ],
   \}
 
-" E bindings
 let g:which_key_map.e = {
   \ 'name' :  '+error'                            ,
   \ 'e'    : ['<Plug>(coc-diagnostic-prev)'       , 'prev error'                ],
   \ 'n'    : ['<Plug>(coc-diagnostic-next)'       , 'next error'                ],
   \}
 
-" F bindings
 let g:which_key_map.f = {
   \ 'name' :  '+file'                             ,
   \ 'd'    : [':Files %:h'                        , 'find files in dir'         ],
@@ -55,7 +49,6 @@ let g:which_key_map.f = {
   \ 't'	   : [':call NerdTreeToggleFind()'        , 'toggle filetree'           ],
   \}
 
-" G bindings
 let g:which_key_map.g = {
   \ 'name' :  '+git'                              ,
   \ 'a'    : [':Git add .'                        , 'git add .'                 ],
@@ -81,7 +74,6 @@ let g:which_key_map.g = {
   \ 'V'    : [':GV!'                              , 'git view buffer commits'   ],
   \}
 
-" J bindings
 let g:which_key_map.j = {
   \ 'name' :  '+jump'                             ,
   \ 'j'    : [''                                  , ''                          ],
@@ -92,7 +84,6 @@ let g:which_key_map.j = {
   \ 'b'    : [''                                  , ''                          ],
   \}
 
-" P bindings
 let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
   \ 'f'    : [':GFiles'                           , 'find files in project'     ],
@@ -101,33 +92,28 @@ let g:which_key_map.p = {
   \ 's'	   : [''  	                              , 'search in project'         ],
   \}
 
-" Q bindings
 let g:which_key_map.q = {
   \ 'name' :  '+quit'	                            ,
   \ 'q'	   : [':qa'  	                            , 'quit'                      ],
   \ 'Q'	   : [':qa!'                              , 'quit without saving'       ],
   \}
 
-" R bindings
 let g:which_key_map.r = {
   \ 'name' :  '+replace'	                        ,
   \ 'r'	   : [''  	                              , 'replace in buffer'         ],
   \ 'c'	   : [''                                  , 'replace current word'      ],
   \}
 
-" S bindings
 let g:which_key_map.s = {
   \ 'name' :  '+search'                           ,
   \ 'p'    : [''                                  , 'search in project'         ],
   \ 's'    : [''                                  , 'search in buffer'          ],
   \}
 
-" T bindings
 let g:which_key_map.t = {
   \ 'name' :  '+toggle'
   \}
 
-" W bindings
 let g:which_key_map.w = {
   \ 'name' :  '+window'                           ,
   \ 'd'    : ['<C-W>c'                            , 'close window'              ],
@@ -145,7 +131,6 @@ let g:which_key_map.w = {
   \ 'v'    : ['<C-W>v<C-W>l'                      , 'split window right'        ],
   \}
 
-" X bindings
 let g:which_key_map.x = {
   \ 'name' :  '+text'                             ,
   \ 'd'    : [':%s/\s\+$//e'                      , 'delete trailing whitespace'],
@@ -153,17 +138,31 @@ let g:which_key_map.x = {
 
 
 " Local key map bindings
-let g:which_key_map['='] = ['', 'format file']
+let g:which_key_map['='] = ['<Plug>(coc-format)'     , 'format file']
+let g:which_key_map['.'] = ['<Plug>(coc-fix-current)', 'format file']
+
+let g:which_key_local_map.c = {
+  \ 'name' :  '+code'                          ,
+  \ 'a'    : ['<Plug>(coc-codeaction)'         , 'action'         ],
+  \ 'A'    : ['<Plug>(coc-codeaction-selected)', 'selected action'],
+  \ 'e'    : [':CocPrev'                       , 'prev action'    ],
+  \ 'l'    : ['<Plug>(coc-codelens-action)'    , 'codelens'       ],
+  \ 'n'    : [':CocNext'                       , 'next action'    ],
+  \}
 
 let g:which_key_local_map.g = {
-  \ 'name' :  '+go to'                     ,
-  \ 'd'    : ['<Plug>(coc-definition)'     , 'go to definition'     ],
-  \ 't'    : ['<Plug>(coc-type-definition)', 'go to type definition'],
+  \ 'name' :  '+go to'                         ,
+  \ 'd'    : ['<Plug>(coc-definition)'         , 'definition'     ],
+  \ 'D'    : ['<Plug>(coc-declaration)'        , 'declaration'    ],
+  \ 'i'    : ['<Plug>(coc-implementation)'     , 'implementation' ],
+  \ 'r'    : ['<Plug>(coc-references)'         , 'references'     ],
+  \ 't'    : ['<Plug>(coc-type-definition)'    , 'type definition'],
   \}
 
 let g:which_key_local_map.r = {
-  \ 'name' :  '+refactor'                         ,
-  \ 'd'    : ['', '']                             ,
+  \ 'name' :  '+refactor'                  ,
+  \ 'r'    : ['<Plug>(coc-rename)'         , 'rename'         ],
+  \ 'R'    : ['<Plug>(coc-refactor)'       , 'refactor'       ],
   \}
 
 " Register which-key

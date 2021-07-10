@@ -7,6 +7,7 @@ nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
 " Prefix dictionary
 let g:which_key_map = {}
+let g:which_key_local_map = {}
 
 " Define a separator
 let g:which_key_sep = '→'
@@ -19,6 +20,8 @@ highlight default link WhichKeyDesc      Function
 
 " Disable floating window
 let g:which_key_use_floating_win = 0
+
+" Leader key map bindings
 
 " Tab bindings
 let g:which_key_map['<Tab>'] = 'last-buffer'
@@ -78,6 +81,17 @@ let g:which_key_map.g = {
   \ 'V'    : [':GV!'                              , 'git view buffer commits'   ],
   \}
 
+" J bindings
+let g:which_key_map.j = {
+  \ 'name' :  '+jump'                             ,
+  \ 'j'    : [''                                  , ''                          ],
+  \ 'J'    : [''                                  , ''                          ],
+  \ 'l'    : [''                                  , ''                          ],
+  \ 'w'    : [''                                  , ''                          ],
+  \ 'f'    : [''                                  , ''                          ],
+  \ 'b'    : [''                                  , ''                          ],
+  \}
+
 " P bindings
 let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
@@ -103,7 +117,7 @@ let g:which_key_map.r = {
 
 " S bindings
 let g:which_key_map.s = {
-  \ 'name' :  '+search'
+  \ 'name' :  '+search'                           ,
   \ 'p'    : [''                                  , 'search in project'         ],
   \ 's'    : [''                                  , 'search in buffer'          ],
   \}
@@ -137,6 +151,22 @@ let g:which_key_map.x = {
   \ 'd'    : [':%s/\s\+$//e'                      , 'delete trailing whitespace'],
   \}
 
+
+" Local key map bindings
+let g:which_key_map['='] = ['', 'format file']
+
+let g:which_key_local_map.g = {
+  \ 'name' :  '+go to'                            ,
+  \ 'd'    : [
+  \}
+
+let g:which_key_local_map.r = {
+  \ 'name' :  '+refactor'                         ,
+  \ 'd'    : [
+  \}
+
 " Register which-key
 call which_key#register('<Space>', "g:which_key_map")
+call which_key#register(',', "g:which_key_local_map")
+
 

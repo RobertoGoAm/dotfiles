@@ -116,8 +116,8 @@ let g:which_key_map.q = {
 
 let g:which_key_map.r = {
   \ 'name' :  '+replace'	                        ,
-  \ 'r'	   : [''  	                              , 'replace in buffer'         ],
-  \ 'c'	   : [''                                  , 'replace current word'      ],
+  \ 'r'	   : [':%s/\<<C-r><C-w>\>//g<Left><Left>'	, 'replace in buffer'         ],
+  \ 's'	   : [''                                  , 'replace current word'      ],
   \}
 
 let g:which_key_map.s = {

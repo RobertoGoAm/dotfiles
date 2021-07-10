@@ -78,6 +78,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integratio
 Plug 'tpope/vim-fugitive'                                       " Git integration
 Plug 'ruanyl/vim-gh-line'                                       " Repository navigation
 Plug 'airblade/vim-gitgutter'                                   " Git integration for the gutter
-Plug 'danarye/vim-merginal'                                     " Easier Git branch management
+Plug 'idanarye/vim-merginal'                                    " Easier Git branch management
 
 call plug#end()

@@ -40,8 +40,9 @@ let g:which_key_map.f = {
 " Q bindings
 let g:which_key_map.q = {
   \ 'name' : '+quit'	,
-  \ 'q'	   : [':qa'  	  , 'quit'],
-  \ 'Q'	   : [':qa!'    , 'quit-without-saving'],
+  \ 'r'	   : [':so $MYVIMRC'  	, 'reload-config'],
+  \ 'q'	   : [':qa'  	          , 'quit'],
+  \ 'Q'	   : [':qa!'            , 'quit-without-saving'],
   \}
 
 " Register which-key

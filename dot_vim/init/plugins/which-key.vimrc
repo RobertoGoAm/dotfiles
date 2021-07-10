@@ -40,8 +40,7 @@ let g:which_key_map.f = {
   \ 'f'    : [':Files'                          , 'find-files'            ],
   \ 'r'    : [':FZFMru'                         , 'recent-files'          ],
   \ 's'    : [':w'                              , 'save-file'             ],
-  \ 't'	   : [':NERDTreeToggle'                 , 'toggle-filetree'       ],
-  \ 'v'    : [':NERDTreeFind'                   , 'reveal-in-filetree'    ],
+  \ 't'	   : [':NERDTreeFind'                   , 'toggle-filetree'       ],
   \}
 
 " G bindings

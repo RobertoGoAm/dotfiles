@@ -25,79 +25,87 @@ let g:which_key_map['<Tab>'] = 'last-buffer'
 
 " Space bindings
 let g:which_key_map[' '] = 'command-mode'
-let g:which_key_map['r'] = ['', 'replace in buffer']
 
 " B bindings
 let g:which_key_map.b = {
   \ 'name' :  '+buffer'                           ,
-  \ 'b'    : [':Buffers'                          , 'find buffer'            ],
-  \ 'd'    : [':bd'                               , 'destroy buffer'         ],
-  \ 'k'    : [':q!'                               , 'kill buffer'            ],
+  \ 'b'    : [':Buffers'                          , 'find buffer'               ],
+  \ 'd'    : [':bd'                               , 'destroy buffer'            ],
+  \ 'k'    : [':q!'                               , 'kill buffer'               ],
   \}
 
 " E bindings
 let g:which_key_map.e = {
   \ 'name' :  '+error'                            ,
-  \ 'e'    : ['<Plug>(coc-diagnostic-prev)'       , 'prev error'             ],
-  \ 'n'    : ['<Plug>(coc-diagnostic-next)'       , 'next error'             ],
+  \ 'e'    : ['<Plug>(coc-diagnostic-prev)'       , 'prev error'                ],
+  \ 'n'    : ['<Plug>(coc-diagnostic-next)'       , 'next error'                ],
   \}
 
 " F bindings
 let g:which_key_map.f = {
   \ 'name' :  '+file'                             ,
-  \ 'd'    : [':Files %:h'                        , 'find files in dir'      ],
-  \ 'f'    : [':Files'                            , 'find files'             ],
-  \ 'r'    : [':FZFMru'                           , 'recent files'           ],
-  \ 'R'	   : [':so $MYVIMRC'  	                  , 'reload config'          ],
-  \ 's'    : [':w'                                , 'save file'              ],
-  \ 't'	   : [':call NerdTreeToggleFind()'        , 'toggle filetree'        ],
+  \ 'd'    : [':Files %:h'                        , 'find files in dir'         ],
+  \ 'f'    : [':Files'                            , 'find files'                ],
+  \ 'r'    : [':FZFMru'                           , 'recent files'              ],
+  \ 'R'	   : [':so $MYVIMRC'  	                  , 'reload config'             ],
+  \ 's'    : [':w'                                , 'save file'                 ],
+  \ 't'	   : [':call NerdTreeToggleFind()'        , 'toggle filetree'           ],
   \}
 
 " G bindings
 let g:which_key_map.g = {
   \ 'name' :  '+git'                              ,
-  \ 'a'    : [':Git add .'                        , 'git add .'              ],
-  \ 'A'    : [':CocCommand fzf-preview.GitStatus' , 'actions'                ],
-  \ 'b'    : [':Git blame'                        , 'git blame'              ],
-  \ 'B'    : [':GBrowse'                          , 'git browse'             ],
-  \ 'c'    : [':Git commit'                       , 'git commit'             ],
-  \ 'd'    : [':Git diff'                         , 'git diff'               ],
-  \ 'D'    : [':Gdiffsplit'                       , 'git diff split'         ],
-  \ 'e'    : ['<Plug>(GitGutterPrevHunk)'         , 'git prev hunk'          ],
-  \ 'g'    : [':Git'                              , 'git status'             ],
-  \ 'h'    : [':GitGutterLineHighlightsToggle'    , 'git highlight hunks'    ],
-  \ 'H'    : ['<Plug>(GitGutterPreviewHunk)'      , 'git preview hunk'       ],
-  \ 'l'    : [':Git log'                          , 'git log'                ],
-  \ 'n'    : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'              ],
-  \ 'p'    : [':Git push'                         , 'git push'               ],
-  \ 'P'    : [':Git pull'                         , 'git pull'               ],
-  \ 'r'    : [':GRemove'                          , 'git rm'                 ],
-  \ 's'    : ['<Plug>(GitGutterStageHunk)'        , 'git stage hunk'         ],
-  \ 't'    : [':GitGutterSignsToggle'             , 'toggle gutter signs'    ],
-  \ 'u'    : ['<Plug>(GitGutterUndoHunk)'         , 'git undo hunk'          ],
-  \ 'v'    : [':GV'                               , 'git view commits'       ],
-  \ 'V'    : [':GV!'                              , 'git view buffer commits'],
+  \ 'a'    : [':Git add .'                        , 'git add .'                 ],
+  \ 'A'    : [':CocCommand fzf-preview.GitStatus' , 'actions'                   ],
+  \ 'b'    : [':Git blame'                        , 'git blame'                 ],
+  \ 'B'    : [':GBrowse'                          , 'git browse'                ],
+  \ 'c'    : [':Git commit'                       , 'git commit'                ],
+  \ 'd'    : [':Git diff'                         , 'git diff'                  ],
+  \ 'D'    : [':Gdiffsplit'                       , 'git diff split'            ],
+  \ 'e'    : ['<Plug>(GitGutterPrevHunk)'         , 'git prev hunk'             ],
+  \ 'g'    : [':Git'                              , 'git status'                ],
+  \ 'h'    : [':GitGutterLineHighlightsToggle'    , 'git highlight hunks'       ],
+  \ 'H'    : ['<Plug>(GitGutterPreviewHunk)'      , 'git preview hunk'          ],
+  \ 'l'    : [':Git log'                          , 'git log'                   ],
+  \ 'n'    : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'                 ],
+  \ 'p'    : [':Git push'                         , 'git push'                  ],
+  \ 'P'    : [':Git pull'                         , 'git pull'                  ],
+  \ 'r'    : [':GRemove'                          , 'git rm'                    ],
+  \ 's'    : ['<Plug>(GitGutterStageHunk)'        , 'git stage hunk'            ],
+  \ 't'    : [':GitGutterSignsToggle'             , 'toggle gutter signs'       ],
+  \ 'u'    : ['<Plug>(GitGutterUndoHunk)'         , 'git undo hunk'             ],
+  \ 'v'    : [':GV'                               , 'git view commits'          ],
+  \ 'V'    : [':GV!'                              , 'git view buffer commits'   ],
   \}
 
 " P bindings
 let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
-  \ 'f'    : [':GFiles'                           , 'find files in project'  ],
-  \ 'p'    : [':FzfSwitchProject'                 , 'switch project'         ],
-  \ 'r'	   : [''  	                              , 'replace in project'     ],
-  \ 's'	   : [''  	                              , 'search in project'      ],
+  \ 'f'    : [':GFiles'                           , 'find files in project'     ],
+  \ 'p'    : [':FzfSwitchProject'                 , 'switch project'            ],
+  \ 'r'	   : [''  	                              , 'replace in project'        ],
+  \ 's'	   : [''  	                              , 'search in project'         ],
   \}
 
 " Q bindings
 let g:which_key_map.q = {
   \ 'name' :  '+quit'	                            ,
-  \ 'q'	   : [':qa'  	                            , 'quit'                   ],
-  \ 'Q'	   : [':qa!'                              , 'quit without saving'    ],
+  \ 'q'	   : [':qa'  	                            , 'quit'                      ],
+  \ 'Q'	   : [':qa!'                              , 'quit without saving'       ],
+  \}
+
+" R bindings
+let g:which_key_map.r = {
+  \ 'name' :  '+replace'	                        ,
+  \ 'r'	   : [''  	                              , 'replace in buffer'         ],
+  \ 'c'	   : [''                                  , 'replace current word'      ],
   \}
 
 " S bindings
 let g:which_key_map.s = {
   \ 'name' :  '+search'
+  \ 'p'    : [''                                  , 'search in project'         ],
+  \ 's'    : [''                                  , 'search in buffer'          ],
   \}
 
 " T bindings
@@ -108,19 +116,25 @@ let g:which_key_map.t = {
 " W bindings
 let g:which_key_map.w = {
   \ 'name' :  '+window'                           ,
-  \ 'd'    : ['<C-W>c'                            , 'close window'           ],
-  \ 'e'    : ['<C-W>k'                            , 'window up'              ],
-  \ 'E'    : [':resize -5'                        , 'expand window up'       ],
-  \ 'h'    : ['<C-W>h'                            , 'window left'            ],
-  \ 'H'    : ['<C-W>5<'                           , 'expand window left'     ],
-  \ 'i'    : ['<C-W>l'                            , 'window right'           ],
-  \ 'I'    : ['<C-W>5>'                           , 'expand window right'    ],
-  \ 'n'    : ['<C-W>j'                            , 'window down'            ],
-  \ 'N'    : [':resize +5'                        , 'expand window below'    ],
-  \ 'o'    : [':only'                             , 'close other windows'    ],
-  \ 'r'    : ['<C-W>r'                            , 'rotate window'          ],
-  \ 's'    : ['<C-W>s<C-W>j'                      , 'split window down'      ],
-  \ 'v'    : ['<C-W>v<C-W>l'                      , 'split window right'     ],
+  \ 'd'    : ['<C-W>c'                            , 'close window'              ],
+  \ 'e'    : ['<C-W>k'                            , 'window up'                 ],
+  \ 'E'    : [':resize -5'                        , 'expand window up'          ],
+  \ 'h'    : ['<C-W>h'                            , 'window left'               ],
+  \ 'H'    : ['<C-W>5<'                           , 'expand window left'        ],
+  \ 'i'    : ['<C-W>l'                            , 'window right'              ],
+  \ 'I'    : ['<C-W>5>'                           , 'expand window right'       ],
+  \ 'n'    : ['<C-W>j'                            , 'window down'               ],
+  \ 'N'    : [':resize +5'                        , 'expand window below'       ],
+  \ 'o'    : [':only'                             , 'close other windows'       ],
+  \ 'r'    : ['<C-W>r'                            , 'rotate window'             ],
+  \ 's'    : ['<C-W>s<C-W>j'                      , 'split window down'         ],
+  \ 'v'    : ['<C-W>v<C-W>l'                      , 'split window right'        ],
+  \}
+
+" X bindings
+let g:which_key_map.x = {
+  \ 'name' :  'text'
+  \ 'd'    : [':%s/\s\+$//e'                      , 'delete trailing whitespace'],
   \}
 
 " Register which-key

@@ -16,3 +16,14 @@ let NERDTreeAutoDeleteBuffer = 1
 " UI tweaks
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+
+" Custom t
+function! NerdTreeToggleFind()
+    if exists("g:NERDTree") && g:NERDTree.IsOpen()
+        NERDTreeClose
+    elseif filereadable(expand('%'))
+        NERDTreeFind
+    else
+        NERDTree
+    endif
+endfunctionoggle

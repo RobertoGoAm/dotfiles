@@ -30,7 +30,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple curso
 Plug 'jiangmiao/auto-pairs'                                     " Edit delimiters in pairs
 Plug 'frazrepo/vim-rainbow'                                     " Rainbow colors for delimiters
 
-
 " File management
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder
 Plug 'junegunn/fzf.vim',                                        " Fuzzy finder
@@ -43,8 +42,14 @@ Plug 'liuchengxu/vim-which-key'                                 " Keybind refere
 Plug 't9md/vim-choosewin'                                       " Switch to specific windows
 Plug 'weilbith/nerdtree_choosewin-plugin'                       " Better behavior for file explorer and choosewin
 
+" Programming languages
+" - HTML
+Plug 'valloric/MatchTagAlways'                                  " Highlight matching HTML tags
+
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management
+Plug 'editorconfig/editorconfig-vim'                            " Configure vim according to project settings
+Plug 'dyng/ctrlsf.vim'                                          " Project search
 
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme

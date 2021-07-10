@@ -78,12 +78,13 @@ let g:which_key_map.g = {
 
 let g:which_key_map.j = {
   \ 'name' :  '+jump'                             ,
-  \ 'j'    : ['<Plug>(easymotion-bd-f)'           , 'easymotion goto char'      ],
-  \ 'J'    : ['<Plug>(easymotion-bd-f2)'          , 'easymotion goto char 2'    ],
-  \ 'l'    : [''                                  , ''                          ],
-  \ 'w'    : [''                                  , ''                          ],
-  \ 'f'    : [''                                  , ''                          ],
-  \ 'b'    : [''                                  , ''                          ],
+  \ '.'    : ['<Plug>(easymotion-repeat)'         , 'repeat last jump'          ],
+  \ 'j'    : ['<Plug>(easymotion-bd-f)'           , 'char'                      ],
+  \ 'J'    : ['<Plug>(easymotion-bd-f2)'          , '2 char'                    ],
+  \ 'l'    : ['<Plug>(easymotion-bd-line)'        , 'line'                      ],
+  \ 'w'    : ['<Plug>(easymotion-bd-w)'           , 'word bidirectional'        ],
+  \ 'f'    : ['<Plug>(easymotion-prefix)w'        , 'word forward'              ],
+  \ 'b'    : ['<Plug>(easymotion-prefix)b'        , 'word backward'             ],
   \}
 
 let g:which_key_map.l = {

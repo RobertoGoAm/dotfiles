@@ -21,9 +21,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming la
 Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
 Plug 'tpope/vim-commentary'                                     " Comments for your code
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple
+Plug 'vim-test/vim-test'                                        " Testing
 
 " Editing
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors
+Plug 'jiangmiao/auto-pairs'                                     " Edit delimiters in pairs
+Plug 'frazrepo/vim-rainbow'                                     " Rainbow colors for delimiters
+
 
 " File management
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder

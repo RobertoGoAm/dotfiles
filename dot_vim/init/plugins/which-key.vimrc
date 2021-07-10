@@ -91,7 +91,7 @@ let g:which_key_map.o = {
     \ 'name' : '+terminal',
     \ 'c' : [':term ++curwin', 'open terminal in current window'],
     \ 's' : [':', 'open terminal down'             ],
-    \ 'v' : [':', 'open terminal right'            ],
+    \ 'v' : [':vert term', 'open terminal right'            ],
     \},
   \}
 
@@ -171,13 +171,21 @@ let g:which_key_local_map.g = {
   \}
 
 let g:which_key_local_map.r = {
-  \ 'name' :  '+refactor'                  ,
-  \ 'r'    : ['<Plug>(coc-rename)'         , 'rename'         ],
-  \ 'R'    : ['<Plug>(coc-refactor)'       , 'refactor'       ],
+  \ 'name' :  '+refactor'                      ,
+  \ 'r'    : ['<Plug>(coc-rename)'             , 'rename'         ],
+  \ 'R'    : ['<Plug>(coc-refactor)'           , 'refactor'       ],
+  \}
+
+let g:which_key_local_map.t = {
+  \ 'name' :  '+test'                          ,
+  \ 'f'    : [':TestFile'                      , 'run file'       ],
+  \ 'n'    : [':TestNearest'                   , 'run nearest'    ],
+  \ 's'    : [':TestSuite'                     , 'run suite'      ],
+  \ 't'    : [':TestLast'                      , 'run last'       ],
+  \ 'v'    : [':TestVisit'                     , 'go to test file'],
   \}
 
 " Register which-key
 call which_key#register('<Space>', "g:which_key_map")
 call which_key#register(',', "g:which_key_local_map")
-
 

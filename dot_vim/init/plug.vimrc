@@ -18,6 +18,7 @@ call plug#begin()
 
 " Code
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
+Plug 'easymotion/vim-easymotion'                                " Code jumping
 Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
 Plug 'tpope/vim-commentary'                                     " Comments for your code
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple

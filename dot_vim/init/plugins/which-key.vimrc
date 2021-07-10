@@ -65,7 +65,7 @@ let g:which_key_map.g = {
   \ 'H'    : ['<Plug>(GitGutterPreviewHunk)'      , 'git preview hunk'          ],
   \ 'l'    : [':Git log'                          , 'git log'                   ],
   \ 'n'    : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'                 ],
-  \ 'o'    : [':GO'                               , 'open line in repo'         ],
+  \ 'o'    : [':GO'                               , 'open repo'                 ],
   \ 'p'    : [':Git push'                         , 'git push'                  ],
   \ 'P'    : [':Git pull'                         , 'git pull'                  ],
   \ 'r'    : [':GRemove'                          , 'git rm'                    ],
@@ -78,8 +78,8 @@ let g:which_key_map.g = {
 
 let g:which_key_map.j = {
   \ 'name' :  '+jump'                             ,
-  \ 'j'    : [''                                  , ''                          ],
-  \ 'J'    : [''                                  , ''                          ],
+  \ 'j'    : ['<Plug>(easymotion-bd-f)'           , 'easymotion goto char'      ],
+  \ 'J'    : ['<Plug>(easymotion-bd-f2)'          , 'easymotion goto char 2'    ],
   \ 'l'    : [''                                  , ''                          ],
   \ 'w'    : [''                                  , ''                          ],
   \ 'f'    : [''                                  , ''                          ],
@@ -96,16 +96,6 @@ let g:which_key_map.l = {
   \ 'U'    : [':CocUpdate'                        , 'update CoC'                ],
   \ 'z'    : [':CocDisable'                       , 'disable CoC'               ],
   \ 'Z'    : [':CocEnable'                        , 'enable CoC'                ],
-  \}
-
-let g:which_key_map.o = {
-  \ 'name' :  '+open'                             ,
-  \ 't' : {
-    \ 'name' : '+terminal',
-    \ 'c' : [':term ++curwin', 'open terminal in current window'],
-    \ 's' : [':', 'open terminal down'             ],
-    \ 'v' : [':vert term', 'open terminal right'            ],
-    \},
   \}
 
 let g:which_key_map.p = {

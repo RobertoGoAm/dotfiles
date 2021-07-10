@@ -17,7 +17,7 @@ autocmd VimEnter *
 call plug#begin()
 
 " Code
-" Plug 'rhysd/clever-f.vim'                                       " More comfortable char motions
+Plug 'rhysd/clever-f.vim'                                       " More comfortable char motions
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
 Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
 Plug 'unblevable/quick-scope'                                   " Highlight chars in a line to help with jumps
@@ -67,7 +67,7 @@ Plug 'vim-airline/vim-airline-themes'                           " Status bar the
 
 " UI
 Plug 'preservim/nerdtree'                                       " File explorer
-Plug 'markonm/traces.vim'                                       " Preview regex replace with highlight
+" Plug 'markonm/traces.vim'                                       " Preview regex replace with highlight
 Plug 'vim-airline/vim-airline'                                  " Status bar
 Plug 'ryanoasis/vim-devicons'                                   " Icons for the file explorer
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Colors for the file explorer

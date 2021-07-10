@@ -33,6 +33,10 @@ Plug 'pbogut/fzf-mru.vim'                                       " Plugin for fzf
 " Keybindings
 Plug 'liuchengxu/vim-which-key'                                 " Keybind reference
 
+" Navigation
+Plug 't9md/vim-choosewin'                                       " Switch to specific windows
+Plug 'weilbith/nerdtree_choosewin-plugin'                       " Better behavior for file explorer and choosewin
+
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management
 

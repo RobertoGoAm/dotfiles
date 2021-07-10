@@ -17,7 +17,7 @@ let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 
-" Custom t
+" Custom toggle
 function! NerdTreeToggleFind()
     if exists("g:NERDTree") && g:NERDTree.IsOpen()
         NERDTreeClose
@@ -26,4 +26,4 @@ function! NerdTreeToggleFind()
     else
         NERDTree
     endif
-endfunctionoggle
+endfunction

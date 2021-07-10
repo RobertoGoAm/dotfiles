@@ -23,8 +23,9 @@ let g:which_key_use_floating_win = 0
 
 " Leader key map bindings
 
-let g:which_key_map['<Tab>'] = 'last-buffer'
-let g:which_key_map[' '] = 'command-mode'
+let g:which_key_map['<Tab>'] = 'last buffer'
+let g:which_key_map[' '] = 'command mode'
+let g:which_key_map['`'] = [':term', 'terminal']
 
 let g:which_key_map.b = {
   \ 'name' :  '+buffer'                           ,

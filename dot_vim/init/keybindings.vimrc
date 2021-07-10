@@ -20,5 +20,7 @@ noremap <C-E> <C-P>
 tnoremap <Esc> <C-\><C-n>
 
 " Switch to las buffer
-nmap <Leader><Tab> :e#<CR>
+noremap <Leader><Tab> :e#<CR>
 
+" Switch to command mode
+noremap <Leader><Leader> :

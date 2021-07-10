@@ -20,8 +20,11 @@ highlight default link WhichKeyDesc      Function
 " Disable floating window
 let g:which_key_use_floating_win = 0
 
-" TAB bindings
+" Tab bindings
 let g:which_key_map['<Tab>'] = 'last-buffer'
+
+" Space bindings
+let g:which_key_map[' '] = 'command-mode'
 
 " B bindings
 let g:which_key_map.b = {

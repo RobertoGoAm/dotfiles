@@ -65,6 +65,7 @@ let g:which_key_map.g = {
   \ 'H'    : ['<Plug>(GitGutterPreviewHunk)'      , 'git preview hunk'          ],
   \ 'l'    : [':Git log'                          , 'git log'                   ],
   \ 'n'    : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'                 ],
+  \ 'o'    : [':GO'                               , 'open line in repo'         ],
   \ 'p'    : [':Git push'                         , 'git push'                  ],
   \ 'P'    : [':Git pull'                         , 'git pull'                  ],
   \ 'r'    : [':GRemove'                          , 'git rm'                    ],
@@ -83,6 +84,18 @@ let g:which_key_map.j = {
   \ 'w'    : [''                                  , ''                          ],
   \ 'f'    : [''                                  , ''                          ],
   \ 'b'    : [''                                  , ''                          ],
+  \}
+
+let g:which_key_map.l = {
+  \ 'name' :  '+lsp'                              ,
+  \ '.'    : [':CocConfig'                        , 'CoC config'                ],
+  \ 'c'    : [':CocList commands'                 , 'CoC commands'              ],
+  \ 'e'    : [':CocList extensions'               , 'CoC extensions'            ],
+  \ 'r'    : [':CocRestart'                       , 'restart CoC'               ],
+  \ 'u'    : [':CocListResume'                    , 'resume list'               ],
+  \ 'U'    : [':CocUpdate'                        , 'update CoC'                ],
+  \ 'z'    : [':CocDisable'                       , 'disable CoC'               ],
+  \ 'Z'    : [':CocEnable'                        , 'enable CoC'                ],
   \}
 
 let g:which_key_map.o = {
@@ -159,6 +172,7 @@ let g:which_key_local_map.c = {
   \ 'e'    : [':CocPrev'                       , 'prev action'    ],
   \ 'l'    : ['<Plug>(coc-codelens-action)'    , 'codelens'       ],
   \ 'n'    : [':CocNext'                       , 'next action'    ],
+  \ 'S'    : [':CocList snippets'              , 'snippets'       ],
   \}
 
 let g:which_key_local_map.g = {
@@ -166,6 +180,8 @@ let g:which_key_local_map.g = {
   \ 'd'    : ['<Plug>(coc-definition)'         , 'definition'     ],
   \ 'D'    : ['<Plug>(coc-declaration)'        , 'declaration'    ],
   \ 'i'    : ['<Plug>(coc-implementation)'     , 'implementation' ],
+  \ 'o'    : [':Vista!!'                       , 'outline'        ],
+  \ 'O'    : [':CocList outline'               , 'search outline' ],
   \ 'r'    : ['<Plug>(coc-references)'         , 'references'     ],
   \ 't'    : ['<Plug>(coc-type-definition)'    , 'type definition'],
   \}

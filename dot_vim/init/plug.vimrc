@@ -22,6 +22,7 @@ Plug 'mattn/emmet-vim'                                          " Expanding abbr
 Plug 'tpope/vim-commentary'                                     " Comments for your code
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple
 Plug 'vim-test/vim-test'                                        " Testing
+Plug 'liuchengxu/vista.vim'                                     " Symbol navigation
 
 " Editing
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors
@@ -57,6 +58,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Colors for the
 " Version Control
 Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integration for the file explorer
 Plug 'tpope/vim-fugitive'                                       " Git integration
+Plug 'ruanyl/vim-gh-line'                                       " Repository navigation
 Plug 'airblade/vim-gitgutter'                                   " Git integration for the gutter
 
 call plug#end()

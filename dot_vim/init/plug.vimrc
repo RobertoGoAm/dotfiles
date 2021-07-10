@@ -20,15 +20,18 @@ call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
 Plug 'easymotion/vim-easymotion'                                " Code jumping
 Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
+Plug 'unblevable/quick-scope'                                   " Highlight chars in a line to help with jumps
 Plug 'tpope/vim-commentary'                                     " Comments for your code
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple
 Plug 'vim-test/vim-test'                                        " Testing
 Plug 'liuchengxu/vista.vim'                                     " Symbol navigation
-
+Plug 'chaoren/vim-wordmotion'                                   " Better detection of words for motions
+"
 " Editing
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors
 Plug 'jiangmiao/auto-pairs'                                     " Edit delimiters in pairs
 Plug 'frazrepo/vim-rainbow'                                     " Rainbow colors for delimiters
+Plug 'tpope/vim-repeat'                                         " Repeat plugin commands with .
 
 " File management
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder
@@ -59,6 +62,7 @@ Plug 'preservim/nerdtree'                                       " File explorer
 Plug 'vim-airline/vim-airline'                                  " Status bar
 Plug 'ryanoasis/vim-devicons'                                   " Icons for the file explorer
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Colors for the file explorer
+Plug 'markonm/traces.vim'                                       " Preview regex replace with highlight
 
 " Version Control
 Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integration for the file explorer

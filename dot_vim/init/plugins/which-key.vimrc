@@ -85,6 +85,15 @@ let g:which_key_map.j = {
   \ 'b'    : [''                                  , ''                          ],
   \}
 
+let g:which_key_map.o = {
+  \ 'name' :  '+open'                             ,
+  \ 't' : {
+    \ 'name' : '+terminal',
+    \ 'c' : [':',
+    \}
+  \ 't'    : [':%s/\s\+$//e'                      , 'delete trailing whitespace'],
+  \}
+
 let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
   \ 'f'    : [':GFiles'                           , 'find files in project'     ],

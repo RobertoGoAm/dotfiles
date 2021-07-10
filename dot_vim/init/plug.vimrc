@@ -29,7 +29,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple curso
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder
 Plug 'junegunn/fzf.vim',                                        " Fuzzy finder
 Plug 'pbogut/fzf-mru.vim'                                       " Plugin for fzf to search recent files
-Plug 'tpope/vim-vinegar'                                        " Quickly open netrw in the current dir
 
 " Keybindings
 Plug 'liuchengxu/vim-which-key'                                 " Keybind reference

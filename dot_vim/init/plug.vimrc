@@ -22,10 +22,10 @@ Plug 'easymotion/vim-easymotion'                                " Code jumping
 Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
 Plug 'unblevable/quick-scope'                                   " Highlight chars in a line to help with jumps
 Plug 'tpope/vim-commentary'                                     " Comments for your code
+Plug 'tommcdo/vim-exchange'                                     " Make text change places
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple
 Plug 'vim-test/vim-test'                                        " Testing
 Plug 'liuchengxu/vista.vim'                                     " Symbol navigation
-Plug 'chaoren/vim-wordmotion'                                   " Better detection of words for motions
 "
 " Editing
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors

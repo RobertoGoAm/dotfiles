@@ -51,7 +51,8 @@ let g:which_key_map.g = {
 " P bindings
 let g:which_key_map.p = {
   \ 'name' :  '+project'                        ,
-  \ 'f'    : [ ':GFiles'                        , 'find-files-in project' ],
+  \ 'f'    : [':GFiles'                         , 'find-files-in-project' ],
+  \ 'p'    : [':FzfSwitchProject'               , 'switch-project'        ],
   \}
 
 " Q bindings

@@ -2,7 +2,11 @@
 set nocompatible
 
 " Use system clipboard
-set clipboard+=unnamedplus
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 
 " Set encoding to UTF-8
 set encoding=UTF-8

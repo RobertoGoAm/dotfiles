@@ -23,6 +23,12 @@ let g:which_key_use_floating_win = 0
 " TAB bindings
 let g:which_key_map['<Tab>'] = 'last-buffer'
 
+" B bindings
+let g:which_key_map.b = {
+  \ 'name' : '+buffer'          ,
+  \ 'b'    : 'find-buffer'      ,
+  \}
+
 " F bindings
 let g:which_key_map.f = {
   \ 'name' : '+file'            ,
@@ -34,8 +40,8 @@ let g:which_key_map.f = {
 " Q bindings
 let g:which_key_map.q = {
   \ 'name' : '+quit'	,
-  \ 'q'	 : [':qa'  	  , 'quit'],
-  \ 'Q'	 : [':qa!'    , 'quit-without-saving'],
+  \ 'q'	   : [':qa'  	  , 'quit'],
+  \ 'Q'	   : [':qa!'    , 'quit-without-saving'],
   \}
 
 " Register which-key

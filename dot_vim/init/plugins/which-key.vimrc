@@ -37,7 +37,7 @@ let g:which_key_map.b = {
 " E bindings
 let g:which_key_map.e = {
   \ 'name' :  '+error'                            ,
-  \ 'e'    : ['<Plug>(coc-diagnostic-prev)'       , 'next error'             ],
+  \ 'e'    : ['<Plug>(coc-diagnostic-prev)'       , 'prev error'             ],
   \ 'n'    : ['<Plug>(coc-diagnostic-next)'       , 'next error'             ],
   \}
 

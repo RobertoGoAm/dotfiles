@@ -25,6 +25,15 @@ let g:which_key_map['<Tab>'] = 'last-buffer'
 
 " Space bindings
 let g:which_key_map[' '] = 'command-mode'
+let g:which_key_map['1'] = ['1gt' , 'window 1' ]
+let g:which_key_map['2'] = ['2gt' , 'window 2' ]
+let g:which_key_map['3'] = ['3gt' , 'window 3' ]
+let g:which_key_map['4'] = ['4gt' , 'window 4' ]
+let g:which_key_map['5'] = ['5gt' , 'window 5' ]
+let g:which_key_map['6'] = ['6gt' , 'window 6' ]
+let g:which_key_map['7'] = ['7gt' , 'window 7' ]
+let g:which_key_map['8'] = ['8gt' , 'window 8' ]
+let g:which_key_map['9'] = ['9gt' , 'window 9' ]
 
 " B bindings
 let g:which_key_map.b = {
@@ -49,8 +58,8 @@ let g:which_key_map.g = {
   \ 'a'    : [':Git add .'                        , 'git add .'              ],
   \ 'A'    : [':CocCommand fzf-preview.GitStatus' , 'actions'                ],
   \ 'b'    : [':Git blame'                        , 'git blame'              ],
-  \ 'c'    : [':Git commit'                       , 'git commit'             ],
   \ 'B'    : [':GBrowse'                          , 'git browse'             ],
+  \ 'c'    : [':Git commit'                       , 'git commit'             ],
   \ 'd'    : [':Git diff'                         , 'git diff'               ],
   \ 'D'    : [':Gdiffsplit'                       , 'git diff split'         ],
   \ 'e'    : ['<Plug>(GitGutterPrevHunk)'         , 'git prev hunk'          ],

@@ -30,7 +30,7 @@ Plug 'tpope/vim-vinegar'                                        " Quickly open n
 Plug 'liuchengxu/vim-which-key'                                 " Keybind reference
 
 " Project management
-Plugin 'benwainwright/fzf-project'                              " Project management
+Plug 'benwainwright/fzf-project'                                " Project management
 
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme

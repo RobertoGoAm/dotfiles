@@ -34,18 +34,30 @@ let g:which_key_map.b = {
 
 " F bindings
 let g:which_key_map.f = {
-  \ 'name' : '+file'            ,
-  \ 's'    : [':w'              , 'file-save']		      ,
-  \ 't'	   : [':NERDTreeToggle' , 'toggle-filetree']    ,
-  \ 'v'    : [':NERDTreeFind'   , 'reveal-in-filetree'] ,
+  \ 'name' :  '+file'           ,
+  \ 's'    : [':w'              , 'file-save'           ],
+  \ 't'	   : [':NERDTreeToggle' , 'toggle-filetree'     ],
+  \ 'v'    : [':NERDTreeFind'   , 'reveal-in-filetree'  ],
   \}
 
 " Q bindings
 let g:which_key_map.q = {
-  \ 'name' : '+quit'	,
-  \ 'r'	   : [':so $MYVIMRC'  	, 'reload-config'],
-  \ 'q'	   : [':qa'  	          , 'quit'],
-  \ 'Q'	   : [':qa!'            , 'quit-without-saving'],
+  \ 'name' :  '+quit'	          ,
+  \ 'r'	   : [':so $MYVIMRC'  	, 'reload-config'       ],
+  \ 'q'	   : [':qa'  	          , 'quit'                ],
+  \ 'Q'	   : [':qa!'            , 'quit-without-saving' ],
+  \}
+
+" W bindings
+let g:which_key_map.w = {
+  \ 'name' :  '+window'         ,
+  \ 'd'    : ['<C-W>c'          , 'window-close'        ],
+  \ 'e'    : ['<C-W>k'          , 'window-up'           ],
+  \ 'h'    : ['<C-W>h'          , 'window-left'         ],
+  \ 'i'    : ['<C-W>l'          , 'window-right'        ],
+  \ 'n'    : ['<C-W>j'          , 'window-down'         ],
+  \ 's'    : ['<C-W>s'          , 'split-window-down'   ],
+  \ 'v'    : ['<C-W>v'          , 'split-window-right'  ],
   \}
 
 " Register which-key

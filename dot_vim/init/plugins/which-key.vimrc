@@ -48,7 +48,9 @@ let g:which_key_map.g = {
   \ 'name' :  '+git'                            ,
   \ 'd'    : [':Git diff'                       , 'git diff'              ],
   \ 'g'    : [':Git'                            , 'git status'            ],
-  \ 'p'    : [':Git push'                       , 'git push'            ],
+  \ 'p'    : [':Git push'                       , 'git push'              ],
+  \ 'P'    : [':Git pull'                       , 'git pull'              ],
+  \ 's'    : ['<Plug>(GitGutterStageHunk)'      , 'git stage hunk'        ],
   \}
 
 " P bindings

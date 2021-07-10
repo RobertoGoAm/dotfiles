@@ -58,9 +58,6 @@ Plug 'gko/vim-coloresque'                                       " Color highligh
 Plug 'benwainwright/fzf-project'                                " Project management
 Plug 'editorconfig/editorconfig-vim'                            " Configure vim according to project settings
 
-" Search
-" Plug 'junegunn/vim-slash'                                       " Better default search
-
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme
 Plug 'vim-airline/vim-airline-themes'                           " Status bar themes

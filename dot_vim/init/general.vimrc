@@ -51,6 +51,9 @@ set noswapfile
 " Time before writting to swap file
 set updatetime=300
 
+" Ask for confirmation before closing buffers
+set confirm
+
 
 "///// Search
 

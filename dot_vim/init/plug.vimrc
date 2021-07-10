@@ -17,18 +17,18 @@ autocmd VimEnter *
 call plug#begin()
 
 " Code
+Plug 'rhysd/clever-f.vim'                                       " More comfortable char motions
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
-Plug 'easymotion/vim-easymotion'                                " Code jumping
 Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
 Plug 'unblevable/quick-scope'                                   " Highlight chars in a line to help with jumps
 Plug 'tpope/vim-commentary'                                     " Comments for your code
+Plug 'easymotion/vim-easymotion'                                " Code jumping
 Plug 'tommcdo/vim-exchange'                                     " Make text change places
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple
 Plug 'vim-test/vim-test'                                        " Testing
 Plug 'chaoren/vim-wordmotion'                                   " Better detection for word motions
 Plug 'liuchengxu/vista.vim'                                     " Symbol navigation
-"
-"
+
 " Editing
 Plug 'jiangmiao/auto-pairs'                                     " Edit delimiters in pairs
 Plug 'frazrepo/vim-rainbow'                                     " Rainbow colors for delimiters
@@ -51,9 +51,15 @@ Plug 'weilbith/nerdtree_choosewin-plugin'                       " Better behavio
 " - HTML
 Plug 'valloric/MatchTagAlways'                                  " Highlight matching HTML tags
 
+" - CSS
+Plug 'gko/vim-coloresque'                                       " Color highlight for color codes
+
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management
 Plug 'editorconfig/editorconfig-vim'                            " Configure vim according to project settings
+
+" Search
+Plug 'junegunn/vim-slash'                                       " Better default search
 
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme

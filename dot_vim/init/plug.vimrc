@@ -49,7 +49,6 @@ Plug 'valloric/MatchTagAlways'                                  " Highlight matc
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management
 Plug 'editorconfig/editorconfig-vim'                            " Configure vim according to project settings
-Plug 'dyng/ctrlsf.vim'                                          " Project search
 
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme

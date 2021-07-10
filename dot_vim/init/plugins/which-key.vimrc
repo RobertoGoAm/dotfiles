@@ -138,8 +138,8 @@ let g:which_key_map.x = {
 
 
 " Local key map bindings
-let g:which_key_map['='] = ['<Plug>(coc-format)'     , 'format file']
-let g:which_key_map['.'] = ['<Plug>(coc-fix-current)', 'format file']
+let g:which_key_local_map['='] = ['<Plug>(coc-format)'     , 'format file']
+let g:which_key_local_map['.'] = ['<Plug>(coc-fix-current)', 'quickfix']
 
 let g:which_key_local_map.c = {
   \ 'name' :  '+code'                          ,

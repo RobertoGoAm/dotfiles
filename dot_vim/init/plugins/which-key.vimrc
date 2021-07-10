@@ -157,12 +157,12 @@ let g:which_key_map['='] = ['', 'format file']
 
 let g:which_key_local_map.g = {
   \ 'name' :  '+go to'                            ,
-  \ 'd'    : [
+  \ 'd'    : ['', '']                             ,
   \}
 
 let g:which_key_local_map.r = {
   \ 'name' :  '+refactor'                         ,
-  \ 'd'    : [
+  \ 'd'    : ['', '']                             ,
   \}
 
 " Register which-key

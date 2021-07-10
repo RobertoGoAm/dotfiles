@@ -123,7 +123,7 @@ let g:which_key_map.s = {
   \}
 
 let g:which_key_map.t = {
-  \ 'name' :  '+toggle'
+  \ 'name' :  '+toggle',
   \}
 
 let g:which_key_map.w = {

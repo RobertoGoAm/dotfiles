@@ -25,7 +25,9 @@ Plug 'tpope/vim-commentary'                                     " Comments for y
 Plug 'tommcdo/vim-exchange'                                     " Make text change places
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple
 Plug 'vim-test/vim-test'                                        " Testing
+Plug 'chaoren/vim-wordmotion'                                   " Better detection for word motions
 Plug 'liuchengxu/vista.vim'                                     " Symbol navigation
+"
 "
 " Editing
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors

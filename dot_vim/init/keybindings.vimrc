@@ -18,3 +18,7 @@ noremap <C-E> <C-P>
 
 " Escape term with ESC
 tnoremap <Esc> <C-\><C-n>
+
+" Switch to las buffer
+nmap <Leader><Tab> :e#<CR>
+

@@ -28,44 +28,51 @@ let g:which_key_map[' '] = 'command-mode'
 
 " B bindings
 let g:which_key_map.b = {
-  \ 'name' : '+buffer'            ,
-  \ 'b'    : [':Buffers'          , 'find-buffer'         ],
-  \ 'r'    : [':FZFMru'           , 'recent-buffers'      ],
+  \ 'name' : '+buffer'                          ,
+  \ 'b'    : [':Buffers'                        , 'find-buffer'         ],
+  \ 'd'    : [':bd'                             , 'destroy-buffer'      ],
   \}
 
 " F bindings
 let g:which_key_map.f = {
-  \ 'name' :  '+file'             ,
-  \ 'f'    : [':Files'            , 'find-files'          ],
-  \ 's'    : [':w'                , 'save-file'           ],
-  \ 't'	   : [':NERDTreeToggle'   , 'toggle-filetree'     ],
-  \ 'v'    : [':NERDTreeFind'     , 'reveal-in-filetree'  ],
+  \ 'name' :  '+file'                           ,
+  \ 'd'    : [':Files %:h'                      , 'find-files-in-dir'   ],
+  \ 'f'    : [':Files'                          , 'find-files'          ],
+  \ 'r'    : [':FZFMru'                         , 'recent-files'      ],
+  \ 's'    : [':w'                              , 'save-file'           ],
+  \ 't'	   : [':NERDTreeToggle'                 , 'toggle-filetree'     ],
+  \ 'v'    : [':NERDTreeFind'                   , 'reveal-in-filetree'  ],
   \}
 
 " P bindings
 let g:which_key_map.p = {
-  \ 'name' :  '+project'           ,
-  \ 'f'    : [ ':GFiles'           , 'find-project-files' ],
+  \ 'name' :  '+project'                        ,
+  \ 'f'    : [ ':GFiles'                        , 'find-project-files' ],
   \}
 
 " Q bindings
 let g:which_key_map.q = {
-  \ 'name' :  '+quit'	            ,
-  \ 'q'	   : [':qa'  	            , 'quit'                ],
-  \ 'Q'	   : [':qa!'              , 'quit-without-saving' ],
-  \ 'r'	   : [':so $MYVIMRC'  	  , 'reload-config'       ],
+  \ 'name' :  '+quit'	                          ,
+  \ 'q'	   : [':qa'  	                          , 'quit'                ],
+  \ 'Q'	   : [':qa!'                            , 'quit-without-saving' ],
+  \ 'r'	   : [':so $MYVIMRC'  	                , 'reload-config'       ],
+  \}
+
+" S bindings
+let g:which_key_map.s = {
+  \ 'name' :  '+search'
   \}
 
 " W bindings
 let g:which_key_map.w = {
-  \ 'name' :  '+window'           ,
-  \ 'd'    : ['<C-W>c'            , 'window-close'        ],
-  \ 'e'    : ['<C-W>k'            , 'window-up'           ],
-  \ 'h'    : ['<C-W>h'            , 'window-left'         ],
-  \ 'i'    : ['<C-W>l'            , 'window-right'        ],
-  \ 'n'    : ['<C-W>j'            , 'window-down'         ],
-  \ 's'    : ['<C-W>s'            , 'split-window-down'   ],
-  \ 'v'    : ['<C-W>v'            , 'split-window-right'  ],
+  \ 'name' :  '+window'                         ,
+  \ 'd'    : ['<C-W>c'                          , 'window-close'        ],
+  \ 'e'    : ['<C-W>k'                          , 'window-up'           ],
+  \ 'h'    : ['<C-W>h'                          , 'window-left'         ],
+  \ 'i'    : ['<C-W>l'                          , 'window-right'        ],
+  \ 'n'    : ['<C-W>j'                          , 'window-down'         ],
+  \ 's'    : ['<C-W>s'                          , 'split-window-down'   ],
+  \ 'v'    : ['<C-W>v'                          , 'split-window-right'  ],
   \}
 
 " Register which-key

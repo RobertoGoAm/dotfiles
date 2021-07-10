@@ -28,7 +28,7 @@ let g:which_key_map[' '] = 'command-mode'
 
 " B bindings
 let g:which_key_map.b = {
-  \ 'name' :  '+buffer'                            ,
+  \ 'name' :  '+buffer'                           ,
   \ 'b'    : [':Buffers'                          , 'find buffer'            ],
   \ 'd'    : [':bd'                               , 'destroy buffer'         ],
   \ 'k'    : [':q!'                               , 'kill buffer'            ],
@@ -82,6 +82,7 @@ let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
   \ 'f'    : [':GFiles'                           , 'find files in project'  ],
   \ 'p'    : [':FzfSwitchProject'                 , 'switch project'         ],
+  \ 'r'	   : [':so $MYVIMRC'  	                  , 'reload config'          ],
   \}
 
 " Q bindings
@@ -89,7 +90,6 @@ let g:which_key_map.q = {
   \ 'name' :  '+quit'	                            ,
   \ 'q'	   : [':qa'  	                            , 'quit'                   ],
   \ 'Q'	   : [':qa!'                              , 'quit without saving'    ],
-  \ 'r'	   : [':so $MYVIMRC'  	                  , 'reload config'          ],
   \}
 
 " S bindings

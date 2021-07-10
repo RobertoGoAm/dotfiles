@@ -31,7 +31,6 @@ let g:which_key_map.b = {
   \ 'name' : '+buffer'                          ,
   \ 'b'    : [':Buffers'                        , 'find-buffer'           ],
   \ 'd'    : [':bd'                             , 'destroy-buffer'        ],
-  \ 'h'    : [':Startify'                       , 'home-buffer'           ],
   \}
 
 " F bindings

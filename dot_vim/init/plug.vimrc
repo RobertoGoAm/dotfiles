@@ -41,8 +41,6 @@ Plug 'preservim/nerdtree'                                       " File explorer
 Plug 'vim-airline/vim-airline'                                  " Status bar
 Plug 'ryanoasis/vim-devicons'                                   " Icons for the file explorer
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Colors for the file explorer
-Plug 'mhinz/vim-startify'                                       " Home buffer
-
 
 " Version Control
 Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integration for the file explorer

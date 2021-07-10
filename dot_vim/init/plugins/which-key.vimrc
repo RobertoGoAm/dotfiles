@@ -20,6 +20,9 @@ highlight default link WhichKeyDesc      Function
 " Disable floating window
 let g:which_key_use_floating_win = 0
 
+" TAB bindings
+let g:which_key_map['<TAB>'] = 'last-buffer'
+
 " F bindings
 let g:which_key_map.f = {
   \ 'name' : '+file'            ,

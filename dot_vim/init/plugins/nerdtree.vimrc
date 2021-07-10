@@ -2,6 +2,7 @@
 let NERDTreeMapOpenExpl="i" " Navigate to the node
 let NERDTreeMenuUp="e"
 let NERDTreeMapOpenSplit="<C-v>"
+let NERDTreeMapOpenVSplit="<C-s>"
 
 " Automatically close NERDTree on opening a file
 let NERDTreeQuitOnOpen = 1

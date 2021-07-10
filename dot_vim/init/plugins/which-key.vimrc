@@ -28,37 +28,45 @@ let g:which_key_map[' '] = 'command-mode'
 
 " B bindings
 let g:which_key_map.b = {
-  \ 'name' : '+buffer'          ,
-  \ 'b'    : 'find-buffer'      ,
-  \ 'r'    : 'recent-buffers'   ,
+  \ 'name' : '+buffer'            ,
+  \ 'b'    : 'find-buffer'        ,
+  \ 'r'    : 'recent-buffers'     ,
   \}
 
 " F bindings
 let g:which_key_map.f = {
-  \ 'name' :  '+file'           ,
-  \ 's'    : [':w'              , 'file-save'           ],
-  \ 't'	   : [':NERDTreeToggle' , 'toggle-filetree'     ],
-  \ 'v'    : [':NERDTreeFind'   , 'reveal-in-filetree'  ],
+  \ 'name' :  '+file'             ,
+  \ 'f'    : [':Files'            , 'find-files'          ],
+  \ 's'    : [':w'                , 'save-file'           ],
+  \ 't'	   : [':NERDTreeToggle'   , 'toggle-filetree'     ],
+  \ 'v'    : [':NERDTreeFind'     , 'reveal-in-filetree'  ],
+  \}
+
+" P bindings
+let g:which_key_map.p = {
+  \ 'name' : '+project'           ,
+  \ 'f'    : 'find-project-files' ,
+  \ 'r'    : 'recent-buffers'     ,
   \}
 
 " Q bindings
 let g:which_key_map.q = {
-  \ 'name' :  '+quit'	          ,
-  \ 'r'	   : [':so $MYVIMRC'  	, 'reload-config'       ],
-  \ 'q'	   : [':qa'  	          , 'quit'                ],
-  \ 'Q'	   : [':qa!'            , 'quit-without-saving' ],
+  \ 'name' :  '+quit'	            ,
+  \ 'q'	   : [':qa'  	            , 'quit'                ],
+  \ 'Q'	   : [':qa!'              , 'quit-without-saving' ],
+  \ 'r'	   : [':so $MYVIMRC'  	  , 'reload-config'       ],
   \}
 
 " W bindings
 let g:which_key_map.w = {
-  \ 'name' :  '+window'         ,
-  \ 'd'    : ['<C-W>c'          , 'window-close'        ],
-  \ 'e'    : ['<C-W>k'          , 'window-up'           ],
-  \ 'h'    : ['<C-W>h'          , 'window-left'         ],
-  \ 'i'    : ['<C-W>l'          , 'window-right'        ],
-  \ 'n'    : ['<C-W>j'          , 'window-down'         ],
-  \ 's'    : ['<C-W>s'          , 'split-window-down'   ],
-  \ 'v'    : ['<C-W>v'          , 'split-window-right'  ],
+  \ 'name' :  '+window'           ,
+  \ 'd'    : ['<C-W>c'            , 'window-close'        ],
+  \ 'e'    : ['<C-W>k'            , 'window-up'           ],
+  \ 'h'    : ['<C-W>h'            , 'window-left'         ],
+  \ 'i'    : ['<C-W>l'            , 'window-right'        ],
+  \ 'n'    : ['<C-W>j'            , 'window-down'         ],
+  \ 's'    : ['<C-W>s'            , 'split-window-down'   ],
+  \ 'v'    : ['<C-W>v'            , 'split-window-right'  ],
   \}
 
 " Register which-key

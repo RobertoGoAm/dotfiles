@@ -1,7 +1,7 @@
 " Remap movement for Colemak
-" noremap n j
+noremap n j
 " noremap N J
-" noremap e k
+noremap e k
 " noremap E K
 " noremap i l
 " noremap I L

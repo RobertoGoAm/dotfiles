@@ -21,6 +21,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming la
 
 " File management
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }  " Fuzzy finder
+Plug 'tpope/vim-vinegar'                                        " Quickly open netrw in the current dir
 
 " Keybindings
 Plug 'liuchengxu/vim-which-key'                                 " Keybind reference

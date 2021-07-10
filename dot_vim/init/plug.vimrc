@@ -22,6 +22,7 @@ Plug 'tpope/vim-commentary'                                     " Comments for y
 
 " File management
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder
+Plug 'junegunn/fzf.vim',                                        " Fuzzy finder
 Plug 'tpope/vim-vinegar'                                        " Quickly open netrw in the current dir
 
 " Keybindings

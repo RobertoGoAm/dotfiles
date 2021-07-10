@@ -10,7 +10,7 @@ set encoding=UTF-8
 " Enable filetype plugins
 filetype plugin indent on
 
-" Undo persists on even on switching buffers
+" Instead of closing an unsaved file on switching to a new one, just hide it
 set hidden
 
 " Enable relative line numbers
@@ -32,13 +32,26 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set showcmd
 
 " Always show sign column
-set signcolumn=yes
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
 
 " Highlight cursor line
 set cursorline
 
 " Taller command section
 set cmdheight=2
+
+" Disable backup files
+set nobackup
+set noswapfile
+
+" Time before writting to swap file
+set updatetime=300
+
 
 "///// Search
 

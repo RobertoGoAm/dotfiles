@@ -16,6 +16,9 @@ autocmd VimEnter *
 "////// Plugins
 call plug#begin()
 
+" Code
+Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
+
 " File management
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }  " Fuzzy finder
 

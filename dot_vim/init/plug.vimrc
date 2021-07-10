@@ -18,8 +18,12 @@ call plug#begin()
 
 " Code
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
+Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
 Plug 'tpope/vim-commentary'                                     " Comments for your code
 Plug 'tpope/vim-surround'                                       " Quoting/parenthesizing made simple
+
+" Editing
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " Multiple cursors
 
 " File management
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder

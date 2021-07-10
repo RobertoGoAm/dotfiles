@@ -21,10 +21,7 @@ highlight default link WhichKeyDesc      Function
 let g:which_key_use_floating_win = 0
 
 " Tab binding
-:nnoremap <TAB> :WhichKey "\<TAB\>"<CR>
-let g:my_tab_dict = {
-  \ '<TAB>' : ':e#',
-  \}
+let g:which_key_map['<TAB>'] = [':e#', 'last-buffer']
 
 " F bindings
 let g:which_key_map.f = {

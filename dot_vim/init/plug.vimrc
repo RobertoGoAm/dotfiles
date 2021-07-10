@@ -23,6 +23,7 @@ Plug 'tpope/vim-commentary'                                     " Comments for y
 " File management
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }             " Fuzzy finder
 Plug 'junegunn/fzf.vim',                                        " Fuzzy finder
+Plug 'pbogut/fzf-mru.vim'                                       " Plugin for fzf to search recent files
 Plug 'tpope/vim-vinegar'                                        " Quickly open netrw in the current dir
 
 " Keybindings
@@ -33,18 +34,18 @@ Plug 'airblade/vim-rooter'                                      " Project detect
 
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'                            " Palenight theme
+Plug 'vim-airline/vim-airline-themes'                           " Status bar themes
 
 " UI
 Plug 'preservim/nerdtree'                                       " File explorer
-Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integration for the file explorer
 Plug 'vim-airline/vim-airline'                                  " Status bar
-Plug 'vim-airline/vim-airline-themes'                           " Status bar themes
 Plug 'ryanoasis/vim-devicons'                                   " Icons for the file explorer
-Plug 'airblade/vim-gitgutter'                                   " Git integration for the gutter
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                  " Colors for the file explorer
 
 
 " Version Control
+Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integration for the file explorer
 Plug 'tpope/vim-fugitive'                                       " Git integration
+Plug 'airblade/vim-gitgutter'                                   " Git integration for the gutter
 
 call plug#end()

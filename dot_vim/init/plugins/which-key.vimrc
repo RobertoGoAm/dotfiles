@@ -29,8 +29,8 @@ let g:which_key_map[' '] = 'command-mode'
 " B bindings
 let g:which_key_map.b = {
   \ 'name' : '+buffer'            ,
-  \ 'b'    : 'find-buffer'        ,
-  \ 'r'    : 'recent-buffers'     ,
+  \ 'b'    : [':Buffers'          , 'find-buffer'         ],
+  \ 'r'    : [':FZFMru'           , 'recent-buffers'      ],
   \}
 
 " F bindings
@@ -44,9 +44,8 @@ let g:which_key_map.f = {
 
 " P bindings
 let g:which_key_map.p = {
-  \ 'name' : '+project'           ,
-  \ 'f'    : 'find-project-files' ,
-  \ 'r'    : 'recent-buffers'     ,
+  \ 'name' :  '+project'           ,
+  \ 'f'    : [ ':GFiles'           , 'find-project-files' ],
   \}
 
 " Q bindings

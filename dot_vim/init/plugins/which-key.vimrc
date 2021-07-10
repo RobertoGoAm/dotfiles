@@ -156,8 +156,9 @@ let g:which_key_map.x = {
 let g:which_key_map['='] = ['', 'format file']
 
 let g:which_key_local_map.g = {
-  \ 'name' :  '+go to'                            ,
-  \ 'd'    : ['', '']                             ,
+  \ 'name' :  '+go to'                     ,
+  \ 'd'    : ['<Plug>(coc-definition)'     , 'go to definition'     ],
+  \ 't'    : ['<Plug>(coc-type-definition)', 'go to type definition'],
   \}
 
 let g:which_key_local_map.r = {

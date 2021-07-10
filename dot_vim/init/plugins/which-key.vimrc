@@ -77,8 +77,8 @@ let g:which_key_map.w = {
   \ 'i'    : ['<C-W>l'                          , 'window-right'          ],
   \ 'n'    : ['<C-W>j'                          , 'window-down'           ],
   \ 'r'    : ['<C-W>r'                          , 'rotate-window'         ],
-  \ 's'    : ['<C-W>s'                          , 'split-window-down'     ],
-  \ 'v'    : ['<C-W>v'                          , 'split-window-right'    ],
+  \ 's'    : ['<C-W>s<C-W>j'                    , 'split-window-down'     ],
+  \ 'v'    : ['<C-W>v<C-W>l'                    , 'split-window-right'    ],
   \}
 
 " Register which-key

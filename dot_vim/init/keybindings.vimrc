@@ -11,6 +11,10 @@ noremap k e
 noremap K E
 noremap l i
 noremap L I
+noremap <C-p> <C-e>
+noremap <C-e> <C-p>
+noremap <C-P> <C-E>
+noremap <C-E> <C-P>
 
 " Escape term with ESC
 tnoremap <Esc> <C-\><C-n>

@@ -6,7 +6,7 @@ vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
 " Prefix dictionary
-let g:which_key_map =  {}
+let g:which_key_map = {}
 
 " Define a separator
 let g:which_key_sep = '→'
@@ -20,20 +20,26 @@ highlight default link WhichKeyDesc      Function
 " Disable floating window
 let g:which_key_use_floating_win = 0
 
+" Tab binding
+:nnoremap <TAB> :WhichKey "\<TAB\>"<CR>
+let g:my_tab_dict = {
+  \ '<TAB>' : ':e#',
+  \}
+
 " F bindings
 let g:which_key_map.f = {
-	\ 'name' : '+file' 	          ,
-	\ 's'    : [':w'              , 'file-save']		      ,
-	\ 't'	   : [':NERDTreeToggle' , 'toggle-filetree']    ,
+  \ 'name' : '+file'            ,
+  \ 's'    : [':w'              , 'file-save']		      ,
+  \ 't'	   : [':NERDTreeToggle' , 'toggle-filetree']    ,
   \ 'v'    : [':NERDTreeFind'   , 'reveal-in-filetree'] ,
-	\}
+  \}
 
 " Q bindings
 let g:which_key_map.q = {
-	\ 'name' : '+quit'	,
-	\ 'q'	 : [':qa'  	, 'quit']			,
-	\ 'Q'	 : [':qa!'  	, 'quit-without-saving']	,
-	\}
+  \ 'name' : '+quit'	,
+  \ 'q'	 : [':qa'  	  , 'quit'],
+  \ 'Q'	 : [':qa!'    , 'quit-without-saving'],
+  \}
 
 " Register which-key
 call which_key#register('<Space>', "g:which_key_map")

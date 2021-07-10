@@ -17,7 +17,7 @@ autocmd VimEnter *
 call plug#begin()
 
 " Code
-Plug 'rhysd/clever-f.vim'                                       " More comfortable char motions
+" Plug 'rhysd/clever-f.vim'                                       " More comfortable char motions
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                 " Programming language features
 Plug 'mattn/emmet-vim'                                          " Expanding abbreviations for html and css
 Plug 'unblevable/quick-scope'                                   " Highlight chars in a line to help with jumps
@@ -78,6 +78,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'                              " Git integratio
 Plug 'tpope/vim-fugitive'                                       " Git integration
 Plug 'ruanyl/vim-gh-line'                                       " Repository navigation
 Plug 'airblade/vim-gitgutter'                                   " Git integration for the gutter
-" Plug 'idanarye/vim-merginal'                                    " Easier Git branch management
+Plug 'idanarye/vim-merginal'                                    " Easier Git branch management
 
 call plug#end()

@@ -1,5 +1,5 @@
 " Bind space to which-key
-nnoremap <silent> <leader> :silent WhichKey '<Space>'<CR>
+nnoremap <silent> <leader> :silent WhichKey '<Space>'
 vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 
 " Bind comma to which-key

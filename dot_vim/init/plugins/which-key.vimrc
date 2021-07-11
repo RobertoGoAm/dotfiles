@@ -110,8 +110,8 @@ let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
   \ 'f'    : [':GFiles'                           , 'find files in project'     ],
   \ 'p'    : [':FzfSwitchProject'                 , 'switch project'            ],
-  \ 'r'	   : [':Acks'  	                          , 'replace in project'        ],
-  \ 's'	   : [':Ack' 	                            , 'search in project'         ],
+  \ 'r'	   : ['<Plug>(FerretAck)'                 , 'replace in project'        ],
+  \ 's'	   : ['<Plug>(FerretAcks)'                , 'search in project'         ],
   \}
 
 let g:which_key_map.q = {

@@ -1,2 +1,2 @@
-" Remove unwanted mappings
-unmap <space><space> <NOP>
+" Disable mappings
+let g:EasyMotion_do_mapping=0

@@ -58,7 +58,8 @@ Plug 'valloric/MatchTagAlways'                                  " Highlight matc
 Plug 'gko/vim-coloresque'                                       " Color highlight for color codes
 
 " - Vue
-Plug 'posva/vim-vue'                                            " Vue support
+" Plug 'posva/vim-vue'                                          " Vue support
+Plug 'leafOfTree/vim-vue-plugin'                                " Vue support
 
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management

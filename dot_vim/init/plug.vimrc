@@ -48,18 +48,23 @@ Plug 't9md/vim-choosewin'                                       " Switch to spec
 Plug 'weilbith/nerdtree_choosewin-plugin'                       " Better behavior for file explorer and choosewin
 
 " Programming languages
+" - CSS
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'gko/vim-coloresque'                                       " Color highlight for color codes
+
 " - GO
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }              " Go support
 
 " - HTML
+Plug 'othree/html5.vim'
 Plug 'valloric/MatchTagAlways'                                  " Highlight matching HTML tags
 
-" - CSS
-Plug 'gko/vim-coloresque'                                       " Color highlight for color codes
+" - JS
+Plug 'yuezk/vim-js'
 
 " - Vue
-" Plug 'posva/vim-vue'                                          " Vue support
-Plug 'leafOfTree/vim-vue-plugin'                                " Vue support
+Plug 'posva/vim-vue'                                            " Vue support
+" Plug 'leafOfTree/vim-vue-plugin'                                " Vue support
 
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management

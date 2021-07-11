@@ -49,13 +49,16 @@ Plug 'weilbith/nerdtree_choosewin-plugin'                       " Better behavio
 
 " Programming languages
 " - GO
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }              " Go support
 
-"- HTML
+" - HTML
 Plug 'valloric/MatchTagAlways'                                  " Highlight matching HTML tags
 
 " - CSS
 Plug 'gko/vim-coloresque'                                       " Color highlight for color codes
+
+" - Vue
+Plug 'posva/vim-vue'                                            " Vue support
 
 " Project management
 Plug 'benwainwright/fzf-project'                                " Project management

@@ -1,5 +1,6 @@
 source $HOME/.vim/init/plugins/airline.vimrc
 source $HOME/.vim/init/plugins/coc.vimrc
+source $HOME/.vim/init/plugins/ferret.vimrc
 source $HOME/.vim/init/plugins/fzf.vimrc
 source $HOME/.vim/init/plugins/fzf-project.vimrc
 source $HOME/.vim/init/plugins/nerdtree.vimrc

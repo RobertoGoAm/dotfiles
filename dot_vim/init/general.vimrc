@@ -93,6 +93,7 @@ set shiftwidth=2
 
 
 "///// Term
+
 set termwinsize=10x0
 set ttimeoutlen=25
 
@@ -121,5 +122,4 @@ syntax on
 
 " Italics
 let g:palenight_terminal_italics=1
-
 

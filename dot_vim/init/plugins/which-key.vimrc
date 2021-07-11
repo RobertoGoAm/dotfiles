@@ -32,7 +32,7 @@ let g:which_key_map['h'] = { 'name': 'which_key_ignore' }
 " Leader key map bindings
 let g:which_key_map['<Tab>'] = 'last buffer'
 " let g:which_key_map[' '] = 'command mode'
-let g:which_key_map[' '] = [':', 'command mode']
+" let g:which_key_map[' '] = [':', 'command mode']
 let g:which_key_map['`'] = [':term', 'terminal']
 
 let g:which_key_map.b = {

@@ -1,5 +1,5 @@
 " Remove unwanted mappings
-unmap <Space>l <NOP>
-unmap <Space>r <NOP>
-unmap <Space>s <NOP>
+unmap <space>l <NOP>
+unmap <space>r <NOP>
+unmap <space>s <NOP>
 

@@ -1,3 +1,18 @@
+" Coc config
+
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-eslint',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-pairs',
+  \ 'coc-snippets',
+  \ 'coc-stylelint',
+  \ 'coc-tsserver',
+  \ 'coc-vetur',
+  \ 'coc-vimlsp',
+  \ ]
+
 " Tab for completion and navigation
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -21,7 +36,6 @@ endif
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
 " GoTo navigation binds
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gy <Plug>(coc-type-definition)

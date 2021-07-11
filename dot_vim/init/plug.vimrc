@@ -48,7 +48,10 @@ Plug 't9md/vim-choosewin'                                       " Switch to spec
 Plug 'weilbith/nerdtree_choosewin-plugin'                       " Better behavior for file explorer and choosewin
 
 " Programming languages
-" - HTML
+" - GO
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+"- HTML
 Plug 'valloric/MatchTagAlways'                                  " Highlight matching HTML tags
 
 " - CSS

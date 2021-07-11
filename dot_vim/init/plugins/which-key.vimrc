@@ -31,8 +31,6 @@ let g:which_key_map['h'] = { 'name': 'which_key_ignore' }
 
 " Leader key map bindings
 let g:which_key_map['<Tab>'] = 'last buffer'
-" let g:which_key_map[' '] = 'command mode'
-" let g:which_key_map[' '] = [':', 'command mode']
 let g:which_key_map['`'] = [':term', 'terminal']
 
 let g:which_key_map.b = {
@@ -112,8 +110,8 @@ let g:which_key_map.p = {
   \ 'name' :  '+project'                          ,
   \ 'f'    : [':GFiles'                           , 'find files in project'     ],
   \ 'p'    : [':FzfSwitchProject'                 , 'switch project'            ],
-  \ 'r'	   : [''  	                              , 'replace in project'        ],
-  \ 's'	   : [':Rg'  	                            , 'search in project'         ],
+  \ 'r'	   : [':Acks'  	                          , 'replace in project'        ],
+  \ 's'	   : [':Ack' 	                            , 'search in project'         ],
   \}
 
 let g:which_key_map.q = {

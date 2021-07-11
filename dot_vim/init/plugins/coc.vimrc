@@ -6,12 +6,15 @@ let g:coc_global_extensions = [
   \ 'coc-go',
   \ 'coc-html',
   \ 'coc-json',
+  \ 'coc-markdownlint',
   \ 'coc-pairs',
+  \ 'coc-sh',
   \ 'coc-snippets',
   \ 'coc-stylelint',
   \ 'coc-tsserver',
   \ 'coc-vetur',
   \ 'coc-vimlsp',
+  \ 'coc-yaml',
   \ ]
 
 " Tab for completion and navigation

@@ -132,8 +132,8 @@ let g:which_key_map.s = {
   \}
 
 let g:which_key_map.t = {
-  \ 'name' :  '+toggle',
-  \ 's'    : [':noh',                             , 'disable search highlight'  ],
+  \ 'name' :  '+toggle'                           ,
+  \ 's'    : [':noh'                              , 'disable search highlight'  ],
   \}
 
 let g:which_key_map.w = {

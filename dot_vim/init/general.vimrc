@@ -1,3 +1,7 @@
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+let g:vim_vue_plugin_load_full_syntax = 1
+let g:vim_vue_plugin_debug = 1
+
 "///// General
 set nocompatible
 

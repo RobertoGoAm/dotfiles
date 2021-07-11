@@ -112,7 +112,7 @@ let g:which_key_map.p = {
   \ 'f'    : [':GFiles'                           , 'find files in project'     ],
   \ 'p'    : [':FzfSwitchProject'                 , 'switch project'            ],
   \ 'r'	   : [''  	                              , 'replace in project'        ],
-  \ 's'	   : [':Rg'  	                              , 'search in project'         ],
+  \ 's'	   : [':Rg'  	                            , 'search in project'         ],
   \}
 
 let g:which_key_map.q = {
@@ -129,12 +129,12 @@ let g:which_key_map.r = {
 
 let g:which_key_map.s = {
   \ 'name' :  '+search'                           ,
-  \ 'p'    : [''                                  , 'search in project'         ],
+  \ 'p'	   : [':Rg'  	                            , 'search in project'         ],
   \}
 
-let g:which_key_map.t = {
-  \ 'name' :  '+toggle',
-  \}
+" let g:which_key_map.t = {
+"   \ 'name' :  '+toggle',
+"   \}
 
 let g:which_key_map.w = {
   \ 'name' :  '+window'                           ,

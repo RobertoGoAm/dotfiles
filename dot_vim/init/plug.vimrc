@@ -49,21 +49,21 @@ Plug 'weilbith/nerdtree_choosewin-plugin'                       " Better behavio
 
 " Programming languages
 " - CSS
-Plug 'cakebaker/scss-syntax.vim'
+Plug 'cakebaker/scss-syntax.vim'                                " SCSS support
 Plug 'gko/vim-coloresque'                                       " Color highlight for color codes
 
 " - GO
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }              " Go support
 
 " - HTML
-Plug 'othree/html5.vim'
+Plug 'othree/html5.vim'                                         " HTML5 support
 Plug 'valloric/MatchTagAlways'                                  " Highlight matching HTML tags
 
 " - JS
-Plug 'yuezk/vim-js'
+Plug 'yuezk/vim-js'                                             " JS support
 
 " - Vue
-Plug 'posva/vim-vue'                                            " Vue support
+Plug 'posva/vim-vue'
 " Plug 'leafOfTree/vim-vue-plugin'                                " Vue support
 
 " Project management
